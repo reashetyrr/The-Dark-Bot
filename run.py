@@ -75,7 +75,8 @@ async def on_raw_reaction_remove(payload):
         role_name = DB().fetch_one('SELECT name FROM rolemenu_roles WHERE rolemenu_id=? AND icon=?',
                                    (rolemenu[0], str(payload.emoji)))[0]
         role = discord.utils.get(channel.guild.roles, name=role_name)
-        await user.remove_roles(role)
+        if role:
+            await user.remove_roles(role)
 
 
 @client.event
