@@ -107,3 +107,4 @@ venv.bak/
 config.py
 tdr.sqlite3
 .idea/
+.idea\
