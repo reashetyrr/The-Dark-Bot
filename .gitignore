@@ -105,3 +105,4 @@ venv.bak/
 
 # custom configuration
 config.py
+tdr.sqlite3
