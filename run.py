@@ -1,9 +1,13 @@
 import discord
 import config
 import shlex
-from models.Command import is_command
-from models.User import User
-from models.DB import DB
+import json
+from models.Message import Message
+from rabbit_handler import RabbitMQHandler as rabbit
+
+# from server.models.Command import is_command
+# from server.models.User import User
+# from server.models.DB import DB
 
 
 client = discord.Client()
@@ -35,11 +39,23 @@ async def on_message(message: discord.Message):
     except ValueError:
         command = message.content
 
-    command_object = is_command(command)
-    if command_object:
-        import commands
-        tmp = getattr(commands, command_object['name'].capitalize())
-        await tmp(command=command_object, author=message.author, client=client, message=message, params=content_spit if len(content_spit) >= 1 else None).execute()
+    if command.startswith('tdb!'):
+        msg = Message(
+            message_type='message',
+            message_action=command,
+            message_command=json.dumps(content_spit).replace('\"', '\''),
+            message_server_id=message.guild.id,
+            message_channel_id=message.channel.id,
+            message_user_id=message.author.id,
+            message_raw_message=message.content.replace('\"', '\\"'),
+        )
+        send_message(msg)
+
+    # command_object = is_command(command)
+    # if command_object:
+    #     from server import commands
+    #     tmp = getattr(commands, command_object['name'].capitalize())
+    #     await tmp(command=command_object, author=message.author, client=client, message=message, params=content_spit if len(content_spit) >= 1 else None).execute()
 
 
 @client.event
@@ -48,35 +64,57 @@ async def on_raw_reaction_add(payload):
     if user == client.user.id:
         return
 
-    channel: discord.TextChannel = client.get_channel(payload.channel_id)
-    user: discord.Member = channel.guild.get_member(user)
+    msg = Message(
+        message_type='reaction',
+        message_action='react',
+        message_command='reaction_added',
+        message_server_id=payload.guild_id,
+        message_channel_id=payload.channel_id,
+        message_user_id=payload.user_id,
+        message_raw_message='',
+    )
+    send_message(msg)
 
-    poll = DB().fetch_one('SELECT * FROM polls WHERE message_id=?', (payload.message_id,))
-    if poll:
-        # is poll
-        # return await channel.send('Thank you {user} for reacting'.format(user=user.mention))
-        pass
-
-    rolemenu = DB().fetch_one('SELECT * FROM rolemenus WHERE message_id=?', (payload.message_id,))
-    if rolemenu:
-        role_name = DB().fetch_one('SELECT name FROM rolemenu_roles WHERE rolemenu_id=? AND icon=?', (rolemenu[0], str(payload.emoji)))[0]
-        role = discord.utils.get(channel.guild.roles, name=role_name)
-        await user.add_roles(role)
+    # channel: discord.TextChannel = client.get_channel(payload.channel_id)
+    # user: discord.Member = channel.guild.get_member(user)
+    #
+    # poll = DB().fetch_one('SELECT * FROM polls WHERE message_id=?', (payload.message_id,))
+    # if poll:
+    #     # is poll
+    #     # return await channel.send('Thank you {user} for reacting'.format(user=user.mention))
+    #     pass
+    #
+    # rolemenu = DB().fetch_one('SELECT * FROM rolemenus WHERE message_id=?', (payload.message_id,))
+    # if rolemenu:
+    #     role_name = DB().fetch_one('SELECT name FROM rolemenu_roles WHERE rolemenu_id=? AND icon=?', (rolemenu[0], str(payload.emoji)))[0]
+    #     role = discord.utils.get(channel.guild.roles, name=role_name)
+    #     await user.add_roles(role)
 
 
 @client.event
 async def on_raw_reaction_remove(payload):
-    user = payload.user_id
-    channel: discord.TextChannel = client.get_channel(payload.channel_id)
-    user: discord.Member = channel.guild.get_member(user)
+    msg = Message(
+        message_type='reaction',
+        message_action='react',
+        message_command='reaction_removed',
+        message_server_id=payload.guild_id,
+        message_channel_id=payload.channel_id,
+        message_user_id=payload.user_id,
+        message_raw_message='',
+    )
+    send_message(msg)
 
-    rolemenu = DB().fetch_one('SELECT * FROM rolemenus WHERE message_id=?', (payload.message_id,))
-    if rolemenu:
-        role_name = DB().fetch_one('SELECT name FROM rolemenu_roles WHERE rolemenu_id=? AND icon=?',
-                                   (rolemenu[0], str(payload.emoji)))[0]
-        role = discord.utils.get(channel.guild.roles, name=role_name)
-        if role:
-            await user.remove_roles(role)
+    # user = payload.user_id
+    # channel: discord.TextChannel = client.get_channel(payload.channel_id)
+    # user: discord.Member = channel.guild.get_member(user)
+    #
+    # rolemenu = DB().fetch_one('SELECT * FROM rolemenus WHERE message_id=?', (payload.message_id,))
+    # if rolemenu:
+    #     role_name = DB().fetch_one('SELECT name FROM rolemenu_roles WHERE rolemenu_id=? AND icon=?',
+    #                                (rolemenu[0], str(payload.emoji)))[0]
+    #     role = discord.utils.get(channel.guild.roles, name=role_name)
+    #     if role:
+    #         await user.remove_roles(role)
 
 
 @client.event
@@ -84,19 +122,33 @@ async def on_member_join(member):
     if member.name == client.user.name:
         return
 
-    if 'discord.gg' in member.name:
-        await member.guild.ban(member, reason='No channel promoting allowed in user names', delete_message_days=1)
-        channel = discord.utils.get(member.guild.channels, channel='tdb-logs')
-        if not channel:
-            channel = await member.guild.create_channel('tdb-logs')
-        return await channel.send_message('Succesfully banned member: %s, reason: promoting using name' % member.mention)
-    return User(member.id, member.avatar_url if member.avatar_url else member.default_avatar_url, member.created_at, member.discriminator, member.mention, member.name, member.display_name, {})
+    msg = Message(
+        message_type='join',
+        message_action='react',
+        message_command='reaction_added',
+        message_server_id=member.guild.id,
+        message_channel_id=0,  # any channel, its a join
+        message_user_id=member.id,
+        message_raw_message='',
+    )
+    send_message(msg)
+
+    # if 'discord.gg' in member.name:
+    #     await member.guild.ban(member, reason='No channel promoting allowed in user names', delete_message_days=1)
+    #     channel = discord.utils.get(member.guild.channels, channel='tdb-logs')
+    #     if not channel:
+    #         channel = await member.guild.create_channel('tdb-logs')
+    #     return await channel.send_message('Succesfully banned member: %s, reason: promoting using name' % member.mention)
+    # return User(member.id, member.avatar_url if member.avatar_url else member.default_avatar_url, member.created_at, member.discriminator, member.mention, member.name, member.display_name, {})
+
+
+def send_message(message: Message):
+    rabbit().send(message=message)
 
 
 @client.event
 async def on_ready():
     current_user = client.user
-    guilds = client.guilds
     print('Logged in as')
     print(current_user)
     print('-------------')
