@@ -4,13 +4,14 @@ import shlex
 import json
 from models.Message import Message
 from rabbit_handler import RabbitMQHandler as rabbit
+import methods
 
 # from server.models.Command import is_command
 # from server.models.User import User
 # from server.models.DB import DB
 
 
-client = discord.Client()
+client = methods.client = discord.Client()
 
 
 @client.event
@@ -39,17 +40,20 @@ async def on_message(message: discord.Message):
     except ValueError:
         command = message.content
 
-    if command.startswith('tdb!'):
+    if command.startswith('tdb!') and message.channel.id == 488652189510664217:
+
         msg = Message(
             message_type='message',
-            message_action=command,
-            message_command=json.dumps(content_spit).replace('\"', '\''),
+            message_action=content_spit[0] if content_spit and len(content_spit) >= 1 else None,
+            message_command=command,
+            message_parameters=json.dumps(content_spit).replace('\"', '\'') if content_spit and len(content_spit) >= 1 else None,
             message_server_id=message.guild.id,
             message_channel_id=message.channel.id,
             message_user_id=message.author.id,
             message_raw_message=message.content.replace('\"', '\\"'),
         )
         send_message(msg)
+        print('send message %s' % msg.__json__())
 
     # command_object = is_command(command)
     # if command_object:
@@ -64,6 +68,9 @@ async def on_raw_reaction_add(payload):
     if user == client.user.id:
         return
 
+    if payload.channel_id != 488652189510664217:
+        return
+
     msg = Message(
         message_type='reaction',
         message_action='react',
@@ -72,8 +79,10 @@ async def on_raw_reaction_add(payload):
         message_channel_id=payload.channel_id,
         message_user_id=payload.user_id,
         message_raw_message='',
+        message_parameters=''
     )
     send_message(msg)
+    print('send message %s' % msg.__json__())
 
     # channel: discord.TextChannel = client.get_channel(payload.channel_id)
     # user: discord.Member = channel.guild.get_member(user)
@@ -93,6 +102,8 @@ async def on_raw_reaction_add(payload):
 
 @client.event
 async def on_raw_reaction_remove(payload):
+    if payload.channel_id != 488652189510664217:
+        return
     msg = Message(
         message_type='reaction',
         message_action='react',
@@ -103,6 +114,7 @@ async def on_raw_reaction_remove(payload):
         message_raw_message='',
     )
     send_message(msg)
+    print('send message %s' % msg.__json__())
 
     # user = payload.user_id
     # channel: discord.TextChannel = client.get_channel(payload.channel_id)
@@ -124,14 +136,15 @@ async def on_member_join(member):
 
     msg = Message(
         message_type='join',
-        message_action='react',
-        message_command='reaction_added',
+        message_action='join',
+        message_command='user_join',
         message_server_id=member.guild.id,
         message_channel_id=0,  # any channel, its a join
         message_user_id=member.id,
         message_raw_message='',
     )
     send_message(msg)
+    print('send message %s' % msg.__json__())
 
     # if 'discord.gg' in member.name:
     #     await member.guild.ban(member, reason='No channel promoting allowed in user names', delete_message_days=1)
