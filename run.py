@@ -12,6 +12,7 @@ import methods
 
 
 client = methods.client = discord.Client()
+rabbit = rabbit()
 
 
 @client.event
@@ -156,7 +157,7 @@ async def on_member_join(member):
 
 
 def send_message(message: Message):
-    rabbit().send(message=message)
+    rabbit.send(message=message)
 
 
 @client.event
