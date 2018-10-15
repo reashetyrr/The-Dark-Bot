@@ -2,9 +2,10 @@ import discord
 import config
 import shlex
 import json
+import methods
+import socket
 from models.Message import Message
 from rabbit_handler import RabbitMQHandler as rabbit
-import methods
 
 # from server.models.Command import is_command
 # from server.models.User import User
@@ -13,6 +14,13 @@ import methods
 
 client = methods.client = discord.Client()
 rabbit = rabbit()
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+addr_info = (config.tdb_process['host'], 9998)
+print('Starting socket on %s:%d' % addr_info)
+sock.connect(addr_info)
+process_client = sock
+print('Connected to socket')
 
 
 @client.event
@@ -79,7 +87,7 @@ async def on_raw_reaction_add(payload):
         message_server_id=payload.guild_id,
         message_channel_id=payload.channel_id,
         message_user_id=payload.user_id,
-        message_raw_message='',
+        message_raw_message=str(payload.emoji),
         message_parameters=''
     )
     send_message(msg)
@@ -113,6 +121,7 @@ async def on_raw_reaction_remove(payload):
         message_channel_id=payload.channel_id,
         message_user_id=payload.user_id,
         message_raw_message='',
+        message_parameters=''
     )
     send_message(msg)
     print('send message %s' % msg.__json__())
@@ -143,6 +152,7 @@ async def on_member_join(member):
         message_channel_id=0,  # any channel, its a join
         message_user_id=member.id,
         message_raw_message='',
+        message_parameters=''
     )
     send_message(msg)
     print('send message %s' % msg.__json__())
@@ -159,6 +169,23 @@ async def on_member_join(member):
 def send_message(message: Message):
     rabbit.send(message=message)
 
+async def send_discord_message(message: Message):
+    if message.type == 'embed':
+        # generate embed
+        msg = json.loads(message.message) # retrieve the body which is send as dict
+        embed = discord.Embed()
+    elif message.type == 'rolemenu':
+        params = json.loads(message.parameters)
+        guild = client.get_guild(message.server_id)
+        user = client.get_user(message.user_id)
+        role = discord.utils.get(guild.roles, name=params['rolemenu_name'])
+
+        if message.command == 'reaction_added':
+            await user.add_roles(role)
+        else:
+            await user.remove_roles(role)
+    else:
+
 
 @client.event
 async def on_ready():
@@ -170,3 +197,13 @@ async def on_ready():
     print('set custom game status')
 
 client.run(config.bot_credentials['token'])
+
+while True:
+    try:
+        received = process_client.recv(2048)
+        print('received through process listener %s' % received)
+        message = Message.parse_json(received)
+        send_discord_message(message)
+        # handle here
+    except EOFError:
+        pass  # Nothing found just continue

@@ -17,7 +17,6 @@ class RabbitMQHandler(object):
         self.channel.basic_publish(exchange='', routing_key='commands_queue', body=message.__json__(), properties=pika.BasicProperties(delivery_mode=2))
 
 
-
 if __name__ == '__main__':
     # message_object = Message(message_action='display', message_command='tdb!test', message_user_id=0,
     #                          message_channel_id=0, message_server_id=0, message_type='test')
