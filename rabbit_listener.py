@@ -5,16 +5,17 @@ from models.Message import Message
 
 
 process_listener = None
-connection = None
 
 
 def receive(body):
+    global process_listener
     msg = body.decode("utf-8")
-    try:
-        message = Message.parse_json(msg)
-        connection.send(message)
-    except:
-        print('Invalid json found: %s' % msg)
+    # try:
+    Message.parse_json(msg)
+    process_listener.sendall(body)
+    print('send message to client for handling')
+    # except:
+    #     print('Invalid json found: %s' % msg)
 
 
 class RabbitMQListener(object):

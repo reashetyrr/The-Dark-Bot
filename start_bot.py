@@ -6,14 +6,15 @@ import subprocess
 
 processes = []
 
-print('Start the bot.')
-handler = subprocess.Popen(['C:\\global_python37_venv\\Scripts\\python.exe', 'C:/Users/Administrator/Desktop/TDR/TDR/run.py'], shell=True)
-processes.append(handler)
-
 
 print('Starting the rabbitmq listener.')
 listener = subprocess.Popen(['C:\\global_python37_venv\\Scripts\\python.exe', 'C:/Users/Administrator/Desktop/TDR/TDR/rabbit_listener.py'], shell=True)
 processes.append(listener)
+
+
+print('Start the bot.')
+handler = subprocess.Popen(['C:\\global_python37_venv\\Scripts\\python.exe', 'C:/Users/Administrator/Desktop/TDR/TDR/run.py'], shell=True)
+processes.append(handler)
 
 
 def exit_called():

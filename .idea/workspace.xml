@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1385ed7e-6673-4c65-af61-52616b29dff5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TDR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TDR.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbit_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Message.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Message.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbit_listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit_listener.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_bot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +16,16 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TDR$rabbit_handler__1_.coverage" NAME="rabbit_handler (1) Coverage Results" MODIFIED="1539157369707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../server/tdr-server" />
-    <SUITE FILE_PATH="coverage/TDR$rabbit_handler.coverage" NAME="rabbit_handler Coverage Results" MODIFIED="1538733114066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TDR$rabbit_listener__1_.coverage" NAME="rabbit_listener (1) Coverage Results" MODIFIED="1539954987310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TDR$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1539251601630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TDR$rabbit_handler.coverage" NAME="rabbit_handler Coverage Results" MODIFIED="1539780931863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../server/tdr-server" />
     <SUITE FILE_PATH="coverage/TDR$User.coverage" NAME="User Coverage Results" MODIFIED="1537797817101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/TDR$start.coverage" NAME="start Coverage Results" MODIFIED="1539251794072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../server/tdr-server" />
-    <SUITE FILE_PATH="coverage/TDR$rabbit_listener.coverage" NAME="rabbit_listener Coverage Results" MODIFIED="1539599272722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../server/tdr-server" />
-    <SUITE FILE_PATH="coverage/TDR$run.coverage" NAME="run Coverage Results" MODIFIED="1539250622879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TDR$start_server.coverage" NAME="start_server Coverage Results" MODIFIED="1539358867520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../server/tdr-server" />
-    <SUITE FILE_PATH="coverage/TDR$start_bot.coverage" NAME="start_bot Coverage Results" MODIFIED="1539599154797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TDR$HTTPTdb.coverage" NAME="HTTPTdb Coverage Results" MODIFIED="1539599277410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../server/tdr-server" />
+    <SUITE FILE_PATH="coverage/TDR$rabbit_listener.coverage" NAME="rabbit_listener Coverage Results" MODIFIED="1539863487362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../server/tdr-server" />
+    <SUITE FILE_PATH="coverage/TDR$run.coverage" NAME="run Coverage Results" MODIFIED="1539955031271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TDR$start_server.coverage" NAME="start_server Coverage Results" MODIFIED="1539942065827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../server/tdr-server" />
+    <SUITE FILE_PATH="coverage/TDR$HTTPTdb.coverage" NAME="HTTPTdb Coverage Results" MODIFIED="1539863489816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../server/tdr-server" />
+    <SUITE FILE_PATH="coverage/TDR$start_bot.coverage" NAME="start_bot Coverage Results" MODIFIED="1539955140815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TDR$nhie.coverage" NAME="nhie Coverage Results" MODIFIED="1538488195220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commands" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -66,7 +65,7 @@
     <session id="599538157">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.37" value="1" />
@@ -78,30 +77,30 @@
         <counts>
           <entry key="gitignore" value="2" />
           <entry key="gitmodules" value="1" />
-          <entry key="py" value="150" />
+          <entry key="py" value="184" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="150" />
+          <entry key="Python" value="184" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="219" />
+          <entry key="Python Console" value="330" />
           <entry key="dummy" value="20" />
           <entry key="gitignore" value="67" />
           <entry key="gitmodules" value="10" />
-          <entry key="py" value="32866" />
+          <entry key="py" value="35522" />
           <entry key="txt" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="133" />
-          <entry key="Python" value="33085" />
+          <entry key="Python" value="35852" />
         </counts>
       </usages-collector>
     </session>
@@ -111,53 +110,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="17" selection-start-line="17" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="246">
+              <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1539602862534" expanded="true" signature="6494:7085" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Message.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-              <folding>
-                <marker date="1538999390706" expanded="true" signature="36:41" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="48" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../server/tdr-server/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../server/tdr-server/rabbit_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1539955157259" expanded="true" signature="6651:7301" ph="..." />
+                <marker date="1539955157259" expanded="true" signature="7947:8006" ph="..." />
+                <marker date="1539955157259" expanded="true" signature="8316:8321" ph="..." />
+                <marker date="1539955157259" expanded="true" signature="8356:8474" ph="..." />
+                <marker date="1539955157259" expanded="true" signature="8356:8475" ph="..." />
               </folding>
             </state>
           </provider>
@@ -166,11 +127,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../server/tdr-server/HTTPTdb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="501">
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1539603015175" expanded="true" signature="274:283" ph="..." />
+                <marker date="1539863439956" expanded="true" signature="311:320" ph="..." />
               </folding>
             </state>
           </provider>
@@ -179,35 +140,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../server/tdr-server/rabbit_listener.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="41" selection-end-column="55" />
+            <state relative-caret-position="238">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbit_listener.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbit_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1539252725816" expanded="true" signature="116:121" ph="..." />
               </folding>
             </state>
           </provider>
@@ -229,6 +165,8 @@
       <find>on_message</find>
       <find>send_message</find>
       <find>proces</find>
+      <find>run</find>
+      <find>starting sock</find>
     </findStrings>
     <replaceStrings>
       <replace>send</replace>
@@ -269,8 +207,6 @@
         <option value="$PROJECT_DIR$/server/HTTPTdb.py" />
         <option value="$PROJECT_DIR$/../server/tdr-server/models/User.py" />
         <option value="$PROJECT_DIR$/.gitmodules" />
-        <option value="$PROJECT_DIR$/../server/tdr-server/models/Message.py" />
-        <option value="$PROJECT_DIR$/models/Message.py" />
         <option value="$PROJECT_DIR$/methods.py" />
         <option value="$PROJECT_DIR$/../server/tdr-server/models/aconsumer.py" />
         <option value="$PROJECT_DIR$/models/aconsumer.py" />
@@ -280,15 +216,17 @@
         <option value="$PROJECT_DIR$/../server/tdr-server/requirements.txt" />
         <option value="$PROJECT_DIR$/rabbit_handler.py" />
         <option value="$PROJECT_DIR$/../server/tdr-server/start_server.py" />
-        <option value="$PROJECT_DIR$/start_bot.py" />
-        <option value="$PROJECT_DIR$/../server/tdr-server/rabbit_handler.py" />
         <option value="$PROJECT_DIR$/../server/tdr-server/routes/default.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/../server/tdr-server/config.py" />
+        <option value="$PROJECT_DIR$/models/Message.py" />
+        <option value="$PROJECT_DIR$/../server/tdr-server/models/Message.py" />
+        <option value="$PROJECT_DIR$/start_bot.py" />
+        <option value="$PROJECT_DIR$/../server/tdr-server/rabbit_handler.py" />
         <option value="$PROJECT_DIR$/../server/tdr-server/rabbit_listener.py" />
+        <option value="$PROJECT_DIR$/../server/tdr-server/HTTPTdb.py" />
         <option value="$PROJECT_DIR$/rabbit_listener.py" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/../server/tdr-server/HTTPTdb.py" />
       </list>
     </option>
   </component>
@@ -298,10 +236,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1338" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="560" />
+    <option name="y" value="80" />
+    <option name="width" value="1197" />
+    <option name="height" value="930" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -331,12 +270,7 @@
             <path>
               <item name="TDR" type="b2602c69:ProjectViewProjectNode" />
               <item name="tdr-server" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TDR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tdr-server" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -346,10 +280,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../server/tdr-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -375,7 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HTTPTdb">
+  <component name="RunManager">
     <configuration name="HTTPTdb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="server" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -398,29 +332,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="rabbit_listener" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="server" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../server/tdr-server" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../server/tdr-server/rabbit_listener.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="start_bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="rabbit_listener (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TDR" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -433,7 +345,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/start_bot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rabbit_listener.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -465,17 +377,15 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.start_bot" />
-      <item itemvalue="Python.start_server" />
-      <item itemvalue="Python.rabbit_listener" />
       <item itemvalue="Python.HTTPTdb" />
+      <item itemvalue="Python.rabbit_listener (1)" />
+      <item itemvalue="Python.start_server" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.HTTPTdb" />
-        <item itemvalue="Python.rabbit_listener" />
-        <item itemvalue="Python.start_bot" />
+        <item itemvalue="Python.rabbit_listener (1)" />
         <item itemvalue="Python.start_server" />
+        <item itemvalue="Python.HTTPTdb" />
       </list>
     </recent_temporary>
   </component>
@@ -502,16 +412,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="560" y="80" width="1197" height="930" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17238347" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4262473" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.27548808" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37814072" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34422112" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -562,6 +471,41 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>b'{&quot;type&quot;:&quot;reaction&quot;,&quot;action&quot;:&quot;react&quot;,&quot;command&quot;:&quot;reaction_added&quot;, &quot;parameters&quot;: &quot;{&quot;message_id&quot;: 502097111836524544}&quot;, &quot;message&quot;: &quot;\xc3\xb0\xc2\x9f\xc2\x96\xc2\xa4&quot;,&quot;user_id&quot;:256070670029553666,&quot;channel_id&quot;:501356854975135745,&quot;server_id&quot;:479604566162145280}'.decode('utf-8', 'slashescape')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>b'{&quot;type&quot;:&quot;reaction&quot;,&quot;action&quot;:&quot;react&quot;,&quot;command&quot;:&quot;reaction_added&quot;, &quot;parameters&quot;: &quot;{&quot;message_id&quot;: 502097111836524544}&quot;, &quot;message&quot;: &quot;\xc3\xb0\xc2\x9f\xc2\x96\xc2\xa4&quot;,&quot;user_id&quot;:256070670029553666,&quot;channel_id&quot;:501356854975135745,&quot;server_id&quot;:479604566162145280}'.decode('utf-8')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str(b'{&quot;type&quot;:&quot;reaction&quot;,&quot;action&quot;:&quot;react&quot;,&quot;command&quot;:&quot;reaction_added&quot;, &quot;parameters&quot;: &quot;{&quot;message_id&quot;: 502097111836524544}&quot;, &quot;message&quot;: &quot;\xc3\xb0\xc2\x9f\xc2\x96\xc2\xa4&quot;,&quot;user_id&quot;:256070670029553666,&quot;channel_id&quot;:501356854975135745,&quot;server_id&quot;:479604566162145280}')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>b'{&quot;type&quot;:&quot;reaction&quot;,&quot;action&quot;:&quot;react&quot;,&quot;command&quot;:&quot;reaction_added&quot;, &quot;parameters&quot;: &quot;{&quot;message_id&quot;: 502097111836524544}&quot;, &quot;message&quot;: &quot;\xc3\xb0\xc2\x9f\xc2\x96\xc2\xa4&quot;,&quot;user_id&quot;:256070670029553666,&quot;channel_id&quot;:501356854975135745,&quot;server_id&quot;:479604566162145280}'.decode('unicode')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>b'{&quot;type&quot;:&quot;reaction&quot;,&quot;action&quot;:&quot;react&quot;,&quot;command&quot;:&quot;reaction_added&quot;, &quot;parameters&quot;: &quot;{&quot;message_id&quot;: 502097111836524544}&quot;, &quot;message&quot;: &quot;\xc3\xb0\xc2\x9f\xc2\x96\xc2\xa4&quot;,&quot;user_id&quot;:256070670029553666,&quot;channel_id&quot;:501356854975135745,&quot;server_id&quot;:479604566162145280}'.decode()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>json.de</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str(body)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>isinstance(process_listener.accept())</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -571,90 +515,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>process_client.recv()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>process_client</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>dict(r.permissions)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>list(r.permissions)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>r.permissions.list()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>r.permissions.list</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>r.permissions</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files/Python37/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="230" selection-start-line="230" selection-end-line="230" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/tdr-server/commands/backup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1139">
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/tdr-server/models/DB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="228" selection-start-line="228" selection-end-line="228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/tdr-server/commands/reindex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="83" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands/yugioh.py" />
-    <entry file="file://$PROJECT_DIR$/../server/tdr-server/models/Command.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../server/tdr-server/commands/rolemenu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -770,20 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/pika/adapters/blocking_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="1811" column="11" lean-forward="true" selection-start-line="1811" selection-start-column="11" selection-end-line="1811" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/tdr-server/models/Message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Python37/Lib/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -835,26 +684,6 @@
     <entry file="file://$PROJECT_DIR$/../server/tdr-server/methods.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/start_bot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/tdr-server/start_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../server/tdr-server/routes/default.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -882,44 +711,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/tdr-server/rabbit_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Python37/Lib/multiprocessing/connection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-508">
           <caret line="572" column="8" selection-start-line="572" selection-start-column="8" selection-end-line="572" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python37/Lib/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="354" selection-start-line="354" selection-end-line="354" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../server/tdr-server/rabbit_listener.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="41" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,6 +725,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/aconsumer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -937,23 +742,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="340" selection-start-line="340" selection-end-line="340" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/Message.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        <state relative-caret-position="340">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding>
-            <marker date="1538999390706" expanded="true" signature="36:41" ph="..." />
+            <marker date="1539862322941" expanded="true" signature="36:41" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbit_listener.py">
+    <entry file="file://$PROJECT_DIR$/../server/tdr-server/start_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        <state relative-caret-position="493">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/pika/adapters/blocking_connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="2468" selection-start-line="2468" selection-end-line="2468" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../server/tdr-server/models/Message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/pika/spec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="2090" selection-start-line="2090" selection-end-line="2090" />
         </state>
       </provider>
     </entry>
@@ -968,34 +811,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../server/tdr-server/HTTPTdb.py">
+    <entry file="file://$PROJECT_DIR$/../server/tdr-server/rabbit_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1539603015175" expanded="true" signature="274:283" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/aconsumer.py">
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        <state relative-caret-position="-426">
+          <caret line="510" column="39" selection-start-line="510" selection-start-column="36" selection-end-line="510" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="349" lean-forward="true" selection-start-line="349" selection-end-line="349" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/asyncio/selector_events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../server/tdr-server/HTTPTdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding>
-            <element signature="e#25#39#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1539863439956" expanded="true" signature="311:320" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/asyncio/events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="221" column="34" lean-forward="true" selection-start-line="221" selection-start-column="34" selection-end-line="221" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbit_listener.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../server/tdr-server/rabbit_listener.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/multiprocessing/reduction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/multiprocessing/spawn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="17" selection-start-line="17" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="246">
+          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1539602862534" expanded="true" signature="6494:7085" ph="..." />
+            <marker date="1539955157259" expanded="true" signature="6651:7301" ph="..." />
+            <marker date="1539955157259" expanded="true" signature="7947:8006" ph="..." />
+            <marker date="1539955157259" expanded="true" signature="8316:8321" ph="..." />
+            <marker date="1539955157259" expanded="true" signature="8356:8474" ph="..." />
+            <marker date="1539955157259" expanded="true" signature="8356:8475" ph="..." />
           </folding>
         </state>
       </provider>

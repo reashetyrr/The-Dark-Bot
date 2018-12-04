@@ -2,7 +2,7 @@ import json
 
 
 class Message(object):
-    def __init__(self, message_type: str, message_action: str, message_command: str, message_parameters: str, message_raw_message: str, message_user_id: int, message_channel_id: int, message_server_id: int):
+    def __init__(self, message_type: str, message_action: str, message_command: str, message_parameters: str, message_raw_message, message_user_id: int, message_channel_id: int, message_server_id: int):
         self.type = message_type
         self.action = None if message_action == "'None'" else message_action
         self.command = message_command
@@ -10,10 +10,10 @@ class Message(object):
         self.channel_id = message_channel_id
         self.server_id = message_server_id
         self.message = message_raw_message
-        self.parameters = None if message_parameters == "'None'" else message_parameters
+        self.parameters = message_parameters
 
     def __json__(self):
-        return '{"type":"%s","action":"%s","command":"%s", "parameters": "%s", "message": "%s","user_id":%d,"channel_id":%d,"server_id":%d}' % (self.type, self.action, self.command, self.parameters, self.message, self.user_id, self.channel_id, self.server_id)
+        return '{"type":"%s","action":"%s","command":"%s", "parameters": %s, "message": "%s","user_id":%d,"channel_id":%d,"server_id":%d}' % (self.type, self.action, self.command, self.parameters, self.message, self.user_id, self.channel_id, self.server_id)
 
     @classmethod
     def parse_json(cls, json_content: str):
