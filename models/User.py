@@ -5,44 +5,49 @@ from models.DB import DB
 
 
 class User(object):
-    def __init__(self, user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, status='new'):
-        self.id = int(user_id)
-        self.avatar_url = avatar_url
+    def __init__(self, user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, last_xp, status='new'):
+        self.id: int = int(user_id)
+        self.avatar_url: str = avatar_url
         self.created_at = time.mktime(created_at.timetuple()) if type(created_at) is datetime else created_at
         self.discriminator = discriminator
-        self.mention = mention
-        self.name = name
-        self.display_name = display_name
-        self.plugins = plugins if type(plugins) is dict else json.loads(plugins)
+        self.mention: str = mention
+        self.name: str = name
+        self.display_name:str = display_name
+        self.plugins: dict = plugins if type(plugins) is dict else json.loads(plugins)
+        self.last_xp: int = last_xp if last_xp else 0
         self.status = status
 
     @classmethod
     def get_by_id(cls, user_id):
         result = DB().fetch_one('SELECT * FROM `users` WHERE id=?', [int(user_id)])
-        user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins = result
-        return cls(user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, status='existing')
+        if result:
+            user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, last_xp = result
+            return cls(user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, last_xp, status='existing')
+        return None
 
     @classmethod
     def get_by_mention(cls, mention):
         result = DB().fetch_one('SELECT * FROM users WHERE mention=?', [mention])
-        user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins = result
-        return cls(user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, status='existing')
+        if result:
+            user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, last_xp = result
+            return cls(user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, last_xp, status='existing')
+        return None
 
     @classmethod
     def get_many_by_id(cls, ids, return_value=None):
         results = DB().fetch_many('SELECT * FROM users WHERE id=?', ids)
         users = []
         for res in results:
-            user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins = res
+            user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, last_xp = res
             if not return_value:
-                users.append(cls(user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, status='existing'))
+                users.append(cls(user_id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, last_xp, status='existing'))
             elif 'id' == return_value:
                 users.append(user_id)
         return users
 
     def save(self):
-        query = 'INSERT OR REPLACE INTO users(id, avatar_url, created_at, discriminator, mention, name, display_name, plugins) VALUES(?,?,?,?,?,?,?,?)' if self.status == 'new' else 'UPDATE users SET avatar_url=?, created_at=?, discriminator=?, mention=?, name=?, display_name=?, plugins=? WHERE id=?'
-        values = (self.id, self.avatar_url, self.created_at, self.discriminator, self.mention, self.name, self.display_name, json.dumps(self.plugins)) if self.status == 'new' else (self.avatar_url, self.created_at, self.discriminator, self.mention, self.name, self.display_name, json.dumps(self.plugins), self.id)
+        query = 'INSERT OR REPLACE INTO users(id, avatar_url, created_at, discriminator, mention, name, display_name, plugins, last_xp) VALUES(?,?,?,?,?,?,?,?,?)' if self.status == 'new' else 'UPDATE users SET avatar_url=?, created_at=?, discriminator=?, mention=?, name=?, display_name=?, plugins=?, last_xp=? WHERE id=?'
+        values = (self.id, self.avatar_url, self.created_at, self.discriminator, self.mention, self.name, self.display_name, json.dumps(self.plugins), self.last_xp) if self.status == 'new' else (self.avatar_url, self.created_at, self.discriminator, self.mention, self.name, self.display_name, json.dumps(self.plugins), self.last_xp, self.id)
         return DB().execute(query, values)
 
 

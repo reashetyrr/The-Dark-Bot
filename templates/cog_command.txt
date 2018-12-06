@@ -1,0 +1,2 @@
+async def {cog_command}(self, ctx: commands.Context, {command_parameters}):
+    pass

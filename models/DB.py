@@ -10,15 +10,15 @@ class DB(object):
         self.cursor = self.database_connection.cursor()
 
     def fetch_all(self, query, params=None):
-        self.cursor.execute(query, params)
+        self.cursor.execute(query, params if params else [])
         return self.cursor.fetchall()
 
     def fetch_many(self, query, params):
-        self.cursor.executemany(query, params)
+        self.cursor.executemany(query, params if params else [])
         return self.cursor.fetchall()
 
     def fetch_one(self, query, params=None):
-        self.cursor.execute(query, params)
+        self.cursor.execute(query, params if params else [])
         return self.cursor.fetchone()
 
     def insert_multiple(self, query, params):
@@ -30,10 +30,10 @@ class DB(object):
 
     def execute(self, query, params=None):
         """LEGACY USE OTHER METHODS"""
-        self.cursor.execute(query, params)
+        self.cursor.execute(query, params if params else [])
 
     def execute_many(self, query, params=None):
         """LEGACY USE OTHER METHODS"""
-        self.cursor.executemany(query, params)
+        self.cursor.executemany(query, params if params else [])
 
 

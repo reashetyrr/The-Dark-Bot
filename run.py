@@ -35,6 +35,12 @@ async def on_message(message: discord.Message):
     except ValueError:
         command = message.content
 
+    if message.channel.id == 488652189510664217:
+        return
+
+    if len(message.embeds) > 0:
+        return
+
     command_object = is_command(command)
     if command_object:
         import commands
@@ -47,7 +53,8 @@ async def on_raw_reaction_add(payload):
     user = payload.user_id
     if user == client.user.id:
         return
-
+    if payload.channel_id == 501356854975135745:
+        return
     channel: discord.TextChannel = client.get_channel(payload.channel_id)
     user: discord.Member = channel.guild.get_member(user)
 
@@ -89,8 +96,29 @@ async def on_member_join(member):
         channel = discord.utils.get(member.guild.channels, channel='tdb-logs')
         if not channel:
             channel = await member.guild.create_channel('tdb-logs')
-        return await channel.send_message('Succesfully banned member: %s, reason: promoting using name' % member.mention)
+        return await channel.send('Succesfully banned member: %s, reason: promoting using name' % member.mention)
+    if member.guild.id == 479604566162145280:
+        role = discord.utils.get(member.guild.roles, name='Users')
+        await member.add_roles(role)
+        channel = member.guild.get_channel(479715873817362432)
+        await channel.send('{} Welcome to The Dark Room, please setup your roles at: <#480057290649501706> and be sure to read our <#479604566166339584>'.format(member.mention))
+        channel = member.guild.get_channel(480091660605456420) # logs channel
+        embed = discord.Embed(title='Server Join', description='', color=config.embed_color, colour=config.embed_color)
+        embed.add_field(name='User', value='{} Joined us'.format('%s(%d)' % (member.name, member.id)), inline=False)
+        await channel.send(embed=embed)
+    if member.guild.id == 501843757042237450:
+        role = discord.utils.get(member.guild.roles, name='member')
+        await member.add_roles(role)
     return User(member.id, member.avatar_url if member.avatar_url else member.default_avatar_url, member.created_at, member.discriminator, member.mention, member.name, member.display_name, {})
+
+
+@client.event
+async def on_member_remove(member):
+    if member.guild.id == 479604566162145280:
+        channel = member.guild.get_channel(480091660605456420) # logs channel
+        embed = discord.Embed(title='Server Leave', description='', color=config.embed_color, colour=config.embed_color)
+        embed.add_field(name='User', value='{} Left us'.format('%s(%d)' % (member.name, member.id)), inline=False)
+        await channel.send(embed=embed)
 
 
 @client.event
