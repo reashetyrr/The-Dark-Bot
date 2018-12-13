@@ -20,6 +20,7 @@ initial_extensions = [
     'cogs.poll',
     'cogs.fun',
     'cogs.levels',
+    'cogs.rolemenu',
     'cogs.pokegym',
 ]
 
@@ -32,7 +33,7 @@ if __name__ == '__main__':
         try:
             bot.load_extension(extension)
         except (Exception, ModuleNotFoundError) as e:
-            print(f'Failed to load extension {extension}.', file=sys.stderr)
+            print(f'Failed to load extension {extension}, {e}', file=sys.stderr)
 
 
 # @bot.check

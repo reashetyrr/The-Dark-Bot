@@ -32,7 +32,7 @@ class PollCog:
     @commands.guild_only()
     @is_plugin_enabled(plugin_name='poll')
     async def cog_poll(self, ctx, poll_name, poll_question, *, options: str):
-        """Poll creation coming soon"""
+        """Create a poll using a name, question and options"""
         options = shlex.split(options)
         if len(options) > 10:
             return await ctx.send('Please limit the options to 10 max')

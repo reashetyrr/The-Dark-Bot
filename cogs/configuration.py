@@ -63,6 +63,24 @@ class ConfigurationCog:
         await guild.leave()
         await ctx.send(f'Succesfully left guild {guild.name}')
 
+    @commands.command(name='render_blacklist', hidden=True)
+    @commands.is_owner()
+    async def cogs_render_blacklist(self, ctx: commands.Context):
+        def check_blacklist_purge(message: discord.Message):
+            return len(message.embeds) > 0
+        blacklisted_guilds: list = [guild for guild in Server.get_all() if guild.blacklisted]
+        for guild in self.bot.guilds:
+            blacklist_channel: discord.TextChannel = discord.utils.get(guild.channels, name='blacklist')
+            if blacklist_channel:
+                await blacklist_channel.purge(limit=100, check=check_blacklist_purge)
+                for blacklisted in blacklisted_guilds:
+                    embed = discord.Embed(title=f'Blacklisted guild', description='', color=ctx.message.author.color, colour=ctx.message.author.color)
+                    embed.add_field(name='Guild name:', value=blacklisted.name)
+                    embed.add_field(name='Guild id (last known):', value=blacklisted.id)
+                    embed.add_field(name='Member count:', value=blacklisted.member_count)
+                    if blacklisted.member_count and blacklisted.name:
+                        await blacklist_channel.send(embed=embed)
+
 
 def setup(bot):
     bot.add_cog(ConfigurationCog(bot))

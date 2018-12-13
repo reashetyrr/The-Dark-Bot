@@ -1,0 +1,116 @@
+I'll get back with you. I am tired...
+<:FeelsDumbMan:462960138534256660> osvddowoj
+Heyyy
+Mya
+<:BunnyHeart:512344880698228746>
+
+rolemenus are my life and polls
+😸
+Aww!
+@Kai Can we please change it so when a message is for a selfie that it goes in the same channel as the selfie you are referring to?
+how would a bot know that
+all a bot sees is a Message type, has no clue of how the content reffers to what picture
+I know
+lets say there are 60 pictures in a channel and someone post a message, then for the bot logic, that message could be for one of the 60 pictures, or the god knows how many other messages
+lets say user x has 4 selfies posted, and you ping user x then it still can be to any of the 4 pictures
+I wasn't saying use a bot for it
+It's just the selfie comments to me is just stupid.
+Actually i find it bs
+😔
+Sorry
+Love you
+❤
+Lol
+i find it useful
+keeps the selfies channel clean
+Keeps it cleaner
+I know what you mean though
+It's quite a pain in the butt to go in another channel to comment
+Indeed
+And then when you send a message into the selfies you feel like an idiot because it deletes it
+I did that xD
+Yet see it like this, you want to see what the channel is for, now what would you rather have, to scroll through God knows how many messages to get the content you expected or just get the content you expected
+Well for servers who don't do this I just filter
+Either way doesn't bother me
+But I think it's cleaner now
+Okay ❤
+Btw
+Man you kicked a lotta peeps XD
+Mhm
+Most of them were invited by me so...
+❤
+Today bit might go down for a bit due to maintainance
+Ahh ok
+👌
+As in server majntainance
+The update restarts hardly gets notuced
+Oh okay
+I'm excited but also scared
+😸
+Emote xD
+Sh XD
+?
+👌
+Well Kai you know, My dad is probably gona be pissed all day about that
+hehehehehehheh
+Reindexer?
+🤔
+Haha no
+The plugin list is while the old version is still running for compatibility like that
+There are only a couple plugins
+Oh umm
+Rolemenus logging are 2
+Oh levels is another plugin
+What version is the bot?
+0.5.2
+Ohh
+So the changelog is outdated
+When this version us working she will jump to v2
+On the website
+Very
+The website i need to work on
+Oh OK
+Everything on there is kinda outdated in the lys soon to expire versiin
+Lts
+*
+How does admin plugin work?
+Type >ah
+There yiu go
+😊
+Fancy???
+🤔
+It's beautiful
+Haha yea
+^^
+Try it out
+🤔
+Just execute the command without params
+Ahh
+Embed creator
+Yush
+XD
+But still gonna extend it
+Mhm
+I love her
+Gonna make it named parameters
+truky
+You should change command to embed
+So you would do it like: >fancy -title example -image img URL here -message ohlalala
+Ohhhhhhhhhhhhhhhhhh
+Noice
+Nice 😊
+hehe
+Give full control
+Butt thats v3
+Umm
+😂
+Blacklist?
+Is that like partner blacklist?
+Yeah thats kinda only use full for network servers
+Yes
+It generates the black list for network servers
+I need to make a check for if ur network server
+Its the list that holds the server where she refuses to join
+Oh right that blacklist
+yup
+its in tdr blacklist

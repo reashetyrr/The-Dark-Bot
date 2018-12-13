@@ -1,10 +1,11 @@
 import discord
+import config
 from discord.ext import commands
 from models.DB import DB
 from models.Server import Server
 from models.server_settings import ServerSettings
 import typing
-from checks import is_server_owner
+from checks import is_server_owner, is_plugin_enabled, is_network_server
 import shlex
 import json
 
@@ -30,7 +31,17 @@ class AdministratorCog:
                 await c.delete()
         await ctx.send('DONE')
 
-    @commands.command(name='setup', aliases=['reindex'], hidden=True)
+    @commands.command(name='fancy', aliases=['create_embed', 'embed'], hidden=True)
+    @commands.guild_only()
+    @commands.has_permissions(manage_messages=True)
+    async def cogs_fancy(self, ctx: commands.Context, title: str, *, message: str):
+        """Create an embed using an title and message"""
+        embed: discord.Embed = discord.Embed(color=ctx.author.color, title=f'{title}')
+        embed.set_author(name=ctx.author.display_name, icon_url=ctx.author.avatar_url)
+        embed.add_field(name='\u200b', value=f'{message}')
+        await ctx.send(embed=embed)
+
+    @commands.command(name='setup', aliases=['reindex', 'register'], hidden=True)
     @commands.guild_only()
     @commands.has_permissions(administrator=True)
     async def cogs_reindex(self, ctx: commands.Context):
@@ -39,7 +50,14 @@ class AdministratorCog:
         server = Server(
             server_id=guild.id,
             server_name=guild.name,
-            member_count=len([m for m in guild.members if not m.bot])
+            member_count=len([m for m in guild.members if not m.bot]),
+            blacklisted=0,
+            icon_url=None,
+            network=0,
+            on_join=None,
+            plugins=[],
+            server_types=None,
+            validations=None
         )
         server.save()
         await ctx.send(f'Succesfully registered server!')
@@ -169,18 +187,35 @@ class AdministratorCog:
         chain: list = json.loads(c_ranks)
 
         success = False
+        converted = False
         for member in members:
             for index, value in enumerate(chain):
                 current_roles = member.roles
-                role: discord.Role = discord.utils.get(ctx.guild.roles, name=chain[index])
+                if type(value) is str:
+                    role: discord.Role = discord.utils.get(ctx.guild.roles, name=chain[index])
+                    chain[index] = role.id
+                    if not converted:
+                        converted = True
+                else:
+                    role: discord.Role = discord.utils.get(ctx.guild.roles, id=chain[index])
                 if role not in current_roles and index <= len(chain):
                     await member.add_roles(role)
+
+                    log_channel: discord.TextChannel = discord.utils.get(ctx.guild.channels, name='tdb-logs')
+                    if log_channel and is_plugin_enabled('logging'):
+                        log_embed = discord.Embed(color=discord.colour.Colour.dark_gold(), title=f'User promotion')
+                        log_embed.add_field(name='Message:', value=f'{ctx.author.mention} has promoted user: {member.mention}')
+                        await log_channel.send(embed=log_embed)
+
                     success = True
                     continue
+        if converted:
+            DB().execute(query='UPDATE promotions set promotion_ranks=? WHERE guild_id=?', params=(json.dumps(chain), ctx.guild.id))
+
+        members_str = ', '.join([member.display_name for member in members])
         if success:
-            members = ', '.join([member.display_name for member in members])
-            return await ctx.send(f'Succesfully promoted {members} to the ranks of: {role.name}')
-        return await ctx.send(f'Error while promoting members: {members}')
+            return await ctx.send(f'Succesfully promoted {members_str} to the ranks of: {role.name}')
+        return await ctx.send(f'Error while promoting members: {members_str}')
 
     @commands.command(name='demote', hidden=True)
     @commands.guild_only()
@@ -194,29 +229,39 @@ class AdministratorCog:
             return await ctx.send('Chain not setup, set it up first!')
 
         chain: list = json.loads(c_ranks)
+        chain.reverse()
         success = False
+        converted = False
         for member in members:
             for index, value in enumerate(chain):
                 current_roles = member.roles
-                try:
-                    role: discord.Role = discord.utils.get(ctx.guild.roles, name=chain[index + 1])
-                except IndexError:
-                    await member.remove_roles(discord.utils.get(ctx.guild.roles, name=chain[index]))
-                    members = ', '.join([member.display_name for member in members])
-                    return await ctx.send(f'Succesfully demoted {members} from the ranks of: {value}')
+                if type(value) is str:
+                    role: discord.Role = discord.utils.get(ctx.guild.roles, name=chain[index])
+                    chain[index] = role.id
+                    if not converted:
+                        converted = True
+                else:
+                    role: discord.Role = discord.utils.get(ctx.guild.roles, id=chain[index])
+                if role in current_roles:
+                    await member.remove_roles(role)
 
-                if role not in current_roles and index - 1 >= 0:
-                    try:
-                        await member.remove_roles(discord.utils.get(ctx.guild.roles, name=chain[index - 1]))
-                        success = True
-                    except:
-                        pass
-                    continue
+                    log_channel: discord.TextChannel = discord.utils.get(ctx.guild.channels, name='tdb-logs')
+                    if log_channel and is_plugin_enabled('logging'):
+                        log_embed = discord.Embed(color=discord.colour.Colour.dark_gold(), title=f'User demotion')
+                        log_embed.add_field(name='Message:', value=f'{ctx.author.mention} has demoted user: {member.mention}')
+                        await log_channel.send(embed=log_embed)
 
+                    success = True
+                    break
+
+        if converted:
+            chain.reverse()
+            DB().execute(query='UPDATE promotions set promotion_ranks=? WHERE guild_id=?', params=(json.dumps(chain), ctx.guild.id))
+
+        members_str = ', '.join([member.display_name for member in members])
         if success:
-            members = ', '.join([member.display_name for member in members])
-            return await ctx.send(f'Succesfully demoted {members} back to the ranks of: {role.name}')
-        return await ctx.send(f'Error while demoting members: {members}')
+            return await ctx.send(f'Succesfully demoted {members_str}')
+        return await ctx.send(f'Error while demoting members: {members_str}')
 
     @commands.group(name='generate', hidden=True)
     @commands.guild_only()
@@ -254,8 +299,7 @@ class AdministratorCog:
     @commands.guild_only()
     # @commands.has_permissions(administrator=True)
     @is_server_owner()
-    async def cogs_generate_tos(self, ctx: commands.Context, action: str = None, term_id: typing.Optional[int] = None,
-                                *, term: typing.Optional[str] = None):
+    async def cogs_generate_tos(self, ctx: commands.Context, action: str = None, term_id: typing.Optional[int] = None, *, term: typing.Optional[str] = None):
         """Generate the tos, pass no action to display the set tos"""
         server_settings = ServerSettings.get_by_id(ctx.guild.id)
         if not server_settings:
@@ -468,7 +512,7 @@ class AdministratorCog:
             backup_object = json.loads(fp.read())
 
         items = shlex.split(items)
-        possible_items = ['all', 'roles', 'channels', 'none']
+        possible_items = ['all', 'roles', 'channels', 'settings', 'none']
         for item in items:
             if item not in possible_items:
                 return await ctx.send(
@@ -650,17 +694,27 @@ class AdministratorCog:
                         channel_amount += 1
             await ctx.send(f'Succesfully rebuild {channel_amount} channels')
         await ctx.send(f'Please remove the current channel {ctx.channel.name}, and set the default channel')
-        icon = backup_object['icon_url']
-        import urllib.request
-        req = urllib.request.Request(backup_object['icon_url'], headers={'User-Agent': "Magic Browser"})
-        resp = urllib.request.urlopen(req)
-        icon = bytearray(resp.read())
-        await guild.edit(icon=icon, name=backup_object['name'])
+        if 'all' in items or 'settings' in items:
+            icon = backup_object['icon_url']
+            import urllib.request
+            req = urllib.request.Request(backup_object['icon_url'], headers={'User-Agent': "Magic Browser"})
+            resp = urllib.request.urlopen(req)
+            icon = bytearray(resp.read())
+            await guild.edit(icon=icon, name=backup_object['name'])
 
-    @commands.command(name='broadcast', aliases=['bc', 'announce'], hidden=True)
+    @commands.command(name='announce', aliases=['bc', 'broadcast'], hidden=True)
     @commands.guild_only()
     @commands.has_permissions(administrator=True)
-    async def cogs_broadcast(self, ctx: commands.Context, announcement_type: str, *, message: str):
+    async def cogs_broadcast(self, ctx: commands.Context, channel: discord.TextChannel, *, message: str):
+        """Send an broadcast/announcement to specified channel"""
+        await channel.send(f'**Announcement:** {message}')
+
+    @commands.command(name='networkbroadcast', aliases=['nbc', 'networkannounce'], hidden=True)
+    @commands.guild_only()
+    @is_network_server()
+    @commands.has_permissions(administrator=True)
+    async def cogs_broadcast_network(self, ctx: commands.Context, announcement_type: str, *, message: str):
+        """Send an network broadcast/announcement"""
         network_servers = Server.get_network_servers()
 
         if announcement_type not in ('table', 'all'):
@@ -732,6 +786,16 @@ class AdministratorCog:
                 else:
                     await ctx.send(f'Skipping bot: {member.display_name}')
         await ctx.send(f'Succesfully finished role reindexing for server: {ctx.guild.name}')
+
+    @commands.command(name='blacklist', hidden=True)
+    @commands.guild_only()
+    @is_network_server()
+    @commands.has_permissions(administrator=True)
+    async def cogs_blacklist(self, ctx: commands.Context, guild_id: int, guild_members: int, *, guild_name: str):
+        """Blacklist a guild"""
+        blacklist = Server(guild_id, guild_name, None, None, None, 0, None, None, guild_members, 1)
+        blacklist.save()
+        await ctx.send(f'Succesfully blacklisted the server')
 
 
 def setup(bot):
