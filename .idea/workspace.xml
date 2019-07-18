@@ -262,13 +262,13 @@
         <counts>
           <entry key="json" value="2" />
           <entry key="py" value="306" />
-          <entry key="txt" value="20" />
+          <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="Python" value="306" />
         </counts>
       </usages-collector>
@@ -277,12 +277,12 @@
           <entry key="Python Console" value="525" />
           <entry key="dummy" value="15" />
           <entry key="py" value="84734" />
-          <entry key="txt" value="37" />
+          <entry key="txt" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="PLAIN_TEXT" value="63" />
           <entry key="Python" value="85213" />
           <entry key="SQL" value="46" />
         </counts>
@@ -335,15 +335,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cogs/fun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="78" column="70" lean-forward="true" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
+            <state relative-caret-position="220">
+              <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1563456408731" expanded="true" signature="2032:2154" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -462,7 +471,6 @@
         <option value="$PROJECT_DIR$/models/plugin.py" />
         <option value="$PROJECT_DIR$/cogs/tests.py" />
         <option value="$PROJECT_DIR$/models/base_model.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/models/User.py" />
         <option value="$PROJECT_DIR$/models/quote.py" />
         <option value="$PROJECT_DIR$/models/DB.py" />
@@ -488,6 +496,7 @@
         <option value="$PROJECT_DIR$/cogs/global.py" />
         <option value="$PROJECT_DIR$/cogs/administration.py" />
         <option value="$PROJECT_DIR$/cogs/fun.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -724,7 +733,7 @@
     <frame x="-8" y="-8" width="1416" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.38669065" visible="true" weight="0.35029498" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.38669065" visible="true" weight="0.35029498" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
@@ -737,7 +746,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.28531468" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.1606464" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3713969" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3713969" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3269962" />
       <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49946696" weight="0.32832617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1043,13 +1052,6 @@ tmp['something'][logging_type] = 'yaay'</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/neverhaveieverqueston.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1330,12 +1332,19 @@ tmp['something'][logging_type] = 'yaay'</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/cogs/fun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="78" column="70" lean-forward="true" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
+        <state relative-caret-position="220">
+          <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1563456408731" expanded="true" signature="2032:2154" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
         </state>
       </provider>
     </entry>
