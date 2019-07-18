@@ -3,9 +3,9 @@ from discord.ext import commands
 from checks import is_plugin_enabled
 
 
-class PokegymCog:
+class PokegymCog(commands.Cog):
     def __init__(self, bot):
-        self.bot: discord.ext.commands.Bot = bot
+        self.bot: commands.Bot = bot
 
     @commands.group(name='pokegym', aliases=['pg'], hidden=True)
     @commands.guild_only()

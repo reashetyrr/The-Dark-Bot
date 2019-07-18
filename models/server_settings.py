@@ -10,14 +10,14 @@ class ServerSettings(object):
 
     @classmethod
     def get_by_id(cls, server_id):
-        result = DB().fetch_one('SELECT * FROM `server_settings` WHERE server_id=?', [int(server_id)])
+        result = DB().fetch_one('SELECT * FROM `server_settings` WHERE server_id=%s', [int(server_id)])
         if result:
             server_id, server_settings = result
             return cls(server_id, server_settings, status='existing')
         return None
 
     def save(self):
-        query = 'INSERT OR REPLACE INTO server_settings(server_id, settings) VALUES(?,?)' if self.status == 'new' else 'UPDATE server_settings SET settings=? WHERE server_id=?'
+        query = 'INSERT OR REPLACE INTO server_settings(server_id, settings) VALUES(%s,%s)' if self.status == 'new' else 'UPDATE server_settings SET settings=%s WHERE server_id=%s'
         values = (self.id, json.dumps(self.settings) if self.settings else None) if self.status == 'new' else (json.dumps(self.settings) if self.settings else None, self.id)
         return DB().execute(query, values)
 

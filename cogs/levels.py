@@ -6,7 +6,7 @@ import typing
 levels = [(28 * x) + 25 for x in range(100)]
 
 
-class LevelsCog:
+class LevelsCog(commands.Cog):
     def __init__(self, bot: discord.ext.commands.Bot):
         self.bot = bot
         # bot.before_invoke(self.before_command_invocation)
@@ -33,6 +33,7 @@ class LevelsCog:
             if current_level > member.plugins['prev_level']:
                 member.plugins['prev_level'] = current_level
                 await ctx.send(f'Congratulations {member.mention}, you have succesfully leveled up and are now level {current_level}')
+            member.save()
         await ctx.send(f'Succesfully gave {xp}xp to: {",".join(m_list)}')
 
 

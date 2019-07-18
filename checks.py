@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 from models.Server import Server
 import json
+import itertools
 
 
 def is_plugin_enabled(plugin_name):
@@ -27,9 +28,35 @@ def is_network_server():
     return commands.check(network_server_check)
 
 
+def has_bot_role(**perms):
+    async def bot_role_check(ctx):
+        guild: Server = Server.get_by_id(server_id=ctx.guild.id)
+        author: discord.Member = ctx.author
+        has_permission = False
+        permissions = ctx.channel.permissions_for(ctx.author)
+
+        missing = [perm for perm, value in perms.items() if getattr(permissions, perm, None) != value]
+
+        mod_list = guild.bot_settings.get('moderators')
+        admin_list = guild.bot_settings.get('administrators')
+        if not missing:
+            has_permission = True
+        if has_permission or author.guild_permissions.administrator or ((perms.get('moderator') and (ctx.author.id in itertools.chain(mod_list, admin_list))) or perms.get('administrator') and ctx.author.id in admin_list):
+            return True
+        raise commands.MissingPermissions(missing)
+    return commands.check(bot_role_check)
+
+
+def is_guild_admin():
+    async def guild_admin_check(ctx: commands.Context):
+        guild: Server = Server.get_by_id(server_id=ctx.guild.id)
+
+
 def is_plugin_activated(guild_id: int, plugin_name: str):
     guild = Server.get_by_id(guild_id)
-    return plugin_name in guild.plugins
+    if guild:
+        return plugin_name in guild.plugins if guild.plugins else False
+    return False
 
 
 def is_server_owner():
@@ -47,3 +74,4 @@ def is_guild(guild: discord.Guild, failure_message: str = 'This command needs to
             return True
         raise commands.CheckFailure(message=failure_message)
     return commands.check(guild_check)
+

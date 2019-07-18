@@ -9,7 +9,7 @@ class NeverHaveIEverQueston(object):
 
     @classmethod
     def get_by_id(cls, question_id):
-        result = DB().fetch_one('SELECT * FROM `nhie_questions` WHERE id=?', [int(question_id)])
+        result = DB().fetch_one('SELECT * FROM `nhie_questions` WHERE id=%s', [int(question_id)])
         question_id, question = result
         return cls(question_id, question)
 

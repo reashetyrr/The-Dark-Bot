@@ -10,11 +10,11 @@ class RolemenuEmote:
         self.id = rolemenu_emote_id
         self.rolemenu_id = rolemenu_id
         self.name = name
-        self.icon = icon
+        self.icon = icon.decode('utf-8') if type(icon) is bytes else icon
 
     @classmethod
     def get_by_id(cls, rolemenu_emote_id: int):
-        result = DB().fetch_one(f'SELECT {get_fields()} FROM `rolemenu_roles` WHERE id=?', [rolemenu_emote_id])
+        result = DB().fetch_one(f'SELECT {get_fields()} FROM `rolemenu_roles` WHERE id=%s', [rolemenu_emote_id])
         return cls(*result) if result else None
 
     @classmethod
@@ -24,16 +24,16 @@ class RolemenuEmote:
 
     @classmethod
     def get_by_rolemenu_id(cls, rolemenu_id: int):
-        results = DB().fetch_all(f'SELECT {get_fields()} FROM `rolemenu_roles` WHERE rolemenu_id=?', [rolemenu_id])
+        results = DB().fetch_all(f'SELECT {get_fields()} FROM `rolemenu_roles` WHERE rolemenu_id=%s', [rolemenu_id])
         return [cls(*result) for result in results] if results else None
 
     @classmethod
     def get_by_emoji(cls, emoji: str, rolemenu_id: int):
-        result = DB().fetch_one(f'SELECT {get_fields()} FROM rolemenu_roles WHERE icon=? and rolemenu_id=?', [str(emoji), rolemenu_id])
+        result = DB().fetch_one(f'SELECT {get_fields()} FROM rolemenu_roles WHERE icon=%s and rolemenu_id=%s', [str(emoji), rolemenu_id])
         return cls(*result) if result else None
 
     def save(self):
-        query = f'INSERT OR REPLACE INTO rolemenu_roles({get_fields()}) VALUES(?,?,?,?)'
+        query = f'REPLACE INTO rolemenu_roles({get_fields()}) VALUES(%s,%s,%s,%s)'
         values = [
             self.rolemenu_id,
             self.icon,
@@ -45,7 +45,7 @@ class RolemenuEmote:
         return self
 
     def delete(self):
-        query = f'DELETE FROM rolemenu_roles WHERE id=?'
+        query = f'DELETE FROM rolemenu_roles WHERE id=%s'
         values = [self.id]
         DB().execute(query, values)
         return None

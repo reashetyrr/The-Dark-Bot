@@ -2,18 +2,19 @@ import discord
 from discord.ext import commands
 from models.DB import DB
 import json
+import shlex
 import string
 import random
 
 
-class GlobalCog:
+class GlobalCog(commands.Cog):
     def __init__(self, bot):
         self.bot: discord.ext.commands.Bot = bot
         bot.remove_command('help')
 
     @commands.command(name='report')
     @commands.guild_only()
-    async def cog_report(self, ctx: commands.Context, id: int):
+    async def cogs_report(self, ctx: commands.Context, id: int):
         """Report a member or guild by passing on the id"""
         if ctx.guild.id != 514806589174054923:
             return await ctx.send(f'Please report people using the dark hub.')
@@ -58,7 +59,7 @@ class GlobalCog:
 
     @commands.command(name='commands', aliases=['help', 'h', 'com', 'c'])
     @commands.guild_only()
-    async def cog_help(self, ctx):
+    async def cogs_help(self, ctx):
         """Retrieve the help box"""
         emb = discord.Embed(title='%s - help' % ctx.guild.name, description='', color=ctx.message.author.color, colour=ctx.message.author.color)
         order = dict()
@@ -77,7 +78,7 @@ class GlobalCog:
     @commands.command(name='admin_commands', aliases=['ah', 'ac'])
     @commands.guild_only()
     @commands.has_permissions(administrator=True)
-    async def cog_admin_help(self, ctx: commands.Context, *, command: str = None):
+    async def cogs_admin_help(self, ctx: commands.Context, *, command: str = None):
         """Retrieve the current Admin help box"""
         emb = discord.Embed(title='%s - admin help' % ctx.guild.name, description='', color=ctx.message.author.color, colour=ctx.message.author.color)
         order = dict()
@@ -92,7 +93,11 @@ class GlobalCog:
                 pass
         for module_name, cmds in order.items():
             if not command:
-                emb.add_field(name=module_name.split('.')[1], value='\n'.join([f'**{com_name}**: {com_desc}' for com_name, com_desc in cmds.items()]), inline=False)
+                if len(cmds.keys()) >= 10:
+                    for i in range(int(len(cmds.keys()) / 10)):
+                        emb.add_field(name=module_name.split('.')[1], value='\n'.join([f'**{com_name}**: {com_desc}' for com_name, com_desc in list(cmds.items())[i:i+10 if i + 10 <= len(cmds.keys()) - 1 else len(cmds.keys()) - 1]]), inline=False)
+                else:
+                    emb.add_field(name=module_name.split('.')[1], value='\n'.join([f'**{com_name}**: {com_desc}' for com_name, com_desc in cmds.items()]), inline=False)
             if command:
                 emb.add_field(name=module_name.split('.')[1], value='\n'.join([f'**{com_name}**: {com_desc}' for com_name, com_desc in cmds.items() if com_name == command]), inline=False)
 
@@ -102,7 +107,7 @@ class GlobalCog:
     @commands.guild_only()
     async def cogs_ranks(self, ctx):
         """Display the existing ranks in the server"""
-        chain = DB().fetch_one(query='SELECT * FROM promotions WHERE guild_id=?', params=(ctx.guild.id,))
+        chain = DB().fetch_one(query='SELECT * FROM promotions WHERE guild_id=%s', params=(ctx.guild.id,))
         try:
             c_guild_id, c_ranks = chain
         except (ValueError, TypeError) as e:
@@ -111,10 +116,13 @@ class GlobalCog:
 
         chain: list = json.loads(c_ranks)
         chain.reverse()
-
+        tmp_chain = chain
+        chain = []
+        for role_id in tmp_chain:
+            chain.append(ctx.guild.get_role(role_id))
         embed = discord.Embed(title=f'Ranks for guild: {ctx.guild.name}', description='\uFEFF', color=ctx.author.color)
         embed.set_author(name=ctx.author.display_name, icon_url=ctx.author.avatar_url)
-        embed.add_field(name=f'Found {len(chain)} ranks.', value='\n'.join(chain))
+        embed.add_field(name=f'Found {len(chain)} ranks.', value='\n'.join([c.name for c in chain]))
 
         await ctx.send(embed=embed)
 

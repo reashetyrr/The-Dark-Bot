@@ -4,7 +4,7 @@ from models.Server import Server
 from models.plugin import Plugin
 
 
-class PluginCog:
+class PluginCog(commands.Cog):
     def __init__(self, bot):
         self.bot: discord.ext.commands.Bot = bot
 
@@ -57,7 +57,7 @@ class PluginCog:
     @commands.has_permissions(administrator=True)
     async def plugin_list_cog(self, ctx):
         """Retrieve the list of available plugins"""
-        plugins = Plugin.get_all()
+        plugins = sorted(Plugin.get_all(), key=lambda k: k.name.lower())
         embed = discord.Embed(title=f'{ctx.guild.name} - Plugin management', description='', color=ctx.message.author.color, colour=ctx.message.author.color)
         if not plugins or 0 == len(plugins):
             embed.add_field(name='Error', value=f'Plugin database retrieval returned 0 results, please contact <@{self.bot.owner_id}>')

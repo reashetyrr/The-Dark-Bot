@@ -8,7 +8,7 @@ from models.rolemenu import Rolemenu
 from models.rolemenu_emote import RolemenuEmote
 
 
-class PluginCog:
+class RolemenuCog(commands.Cog):
     def __init__(self, bot):
         self.bot: discord.ext.commands.Bot = bot
 
@@ -36,7 +36,7 @@ class PluginCog:
     @commands.guild_only()
     @commands.has_permissions(manage_messages=True)
     @is_plugin_enabled('rolemenus')
-    async def cogs_rolemenu_create(self, ctx: commands.Context, title: str, roles: commands.Greedy[discord.Role], *emotes: typing.Union[discord.Emoji, discord.PartialEmoji, str]):
+    async def cogs_rolemenu_create(self, ctx: commands.Context, title: str, roles: commands.Greedy[discord.Role], *emotes: typing.Union[discord.PartialEmoji, str]):
         """Create a rolemenu"""
         emotes = [x for x in emotes if x not in (' ', '')]
         if len(roles) > 10:
@@ -137,4 +137,4 @@ class PluginCog:
 
 
 def setup(bot: discord.ext.commands.Bot):
-    bot.add_cog(PluginCog(bot))
+    bot.add_cog(RolemenuCog(bot))

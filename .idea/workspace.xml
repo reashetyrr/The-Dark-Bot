@@ -2,17 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1385ed7e-6673-4c65-af61-52616b29dff5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TDR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TDR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/checks.py" beforeDir="false" afterPath="$PROJECT_DIR$/checks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/administration.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/custom.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/custom.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/fun.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/fun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/global.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/global.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/levels.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/plugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/plugin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/pokegym.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/pokegym.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/poll.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/poll.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/rolemenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/rolemenu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/wrestling.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/wrestling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate_cog.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_cog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-11-h23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-12-h9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/2018-12-13-h9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Command.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/DB.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/DB.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run from windows.lnk" beforeDir="false" afterPath="$PROJECT_DIR$/run from windows.lnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/neverhaveieverqueston.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/neverhaveieverqueston.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/plugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/plugin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/rolemenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/rolemenu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/rolemenu_emote.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/rolemenu_emote.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/server_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/server_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run from windows.lnk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cog_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cog_command.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,21 +91,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$neverhaveieverqueston.coverage" NAME="neverhaveieverqueston Coverage Results" MODIFIED="1543073721549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$start_bot.coverage" NAME="start_bot Coverage Results" MODIFIED="1544041844525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BETA" />
-    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$start_api.coverage" NAME="start_api Coverage Results" MODIFIED="1543244007811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$helpers.coverage" NAME="helpers Coverage Results" MODIFIED="1543935232798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BETA" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$network_analyze.coverage" NAME="network analyze Coverage Results" MODIFIED="1553872484833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../discord_network_analysis" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$create_avatar_data.coverage" NAME="create_avatar_data Coverage Results" MODIFIED="1554372111719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../discord_network_analysis" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$extend_avatar_data.coverage" NAME="extend_avatar_data Coverage Results" MODIFIED="1554560900486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../discord_network_analysis" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1546954199515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TDR$run.coverage" NAME="run Coverage Results" MODIFIED="1538663134503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/the_dark_rewrite$start_api.coverage" NAME="start_api Coverage Results" MODIFIED="1544532194722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$spam.coverage" NAME="spam Coverage Results" MODIFIED="1547641735580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$generate_cog.coverage" NAME="generate_cog Coverage Results" MODIFIED="1543076800343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/the_dark_rewrite$start_bot__1_.coverage" NAME="start_bot (1) Coverage Results" MODIFIED="1544699376628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$run_api.coverage" NAME="run_api Coverage Results" MODIFIED="1553873218295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../discord_network_analysis" />
     <SUITE FILE_PATH="coverage/TDR$nhie.coverage" NAME="nhie Coverage Results" MODIFIED="1538488195220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/commands" />
     <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$run.coverage" NAME="run Coverage Results" MODIFIED="1540998595335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/the_dark_rewrite$rolemenu_emote.coverage" NAME="rolemenu_emote Coverage Results" MODIFIED="1544128226064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/the_dark_rewrite$Server.coverage" NAME="Server Coverage Results" MODIFIED="1544191008101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/TDR$User.coverage" NAME="User Coverage Results" MODIFIED="1537797817101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$Server.coverage" NAME="Server Coverage Results" MODIFIED="1542988611140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$checks.coverage" NAME="checks Coverage Results" MODIFIED="1547557882376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/the_dark_rewrite$rolemenu.coverage" NAME="rolemenu Coverage Results" MODIFIED="1544122786736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$neverhaveieverqueston.coverage" NAME="neverhaveieverqueston Coverage Results" MODIFIED="1543073721549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$start_bot.coverage" NAME="start_bot Coverage Results" MODIFIED="1544041844525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BETA" />
+    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$start_api.coverage" NAME="start_api Coverage Results" MODIFIED="1543244007811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$helpers.coverage" NAME="helpers Coverage Results" MODIFIED="1543935232798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BETA" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$start_api.coverage" NAME="start_api Coverage Results" MODIFIED="1545212272189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$start_bot__1_.coverage" NAME="start_bot (1) Coverage Results" MODIFIED="1562222927624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$spammer__1_.coverage" NAME="spammer (1) Coverage Results" MODIFIED="1554384300329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../discord_network_analysis" />
+    <SUITE FILE_PATH="coverage/The_Dark_Bot_0_4_4$Server.coverage" NAME="Server Coverage Results" MODIFIED="1542988611140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/the_dark_rewrite$spammer.coverage" NAME="spammer Coverage Results" MODIFIED="1554370319343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/the_dark_rewrite$plugin.coverage" NAME="plugin Coverage Results" MODIFIED="1544276992721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
   </component>
   <component name="DatabaseView">
@@ -165,31 +244,47 @@
     <session id="1569636171">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.195" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="37" />
-          <entry key="txt" value="10" />
+          <entry key="json" value="2" />
+          <entry key="py" value="306" />
+          <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="37" />
+          <entry key="JSON" value="2" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Python" value="306" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="148" />
-          <entry key="py" value="14320" />
+          <entry key="Python Console" value="525" />
+          <entry key="dummy" value="15" />
+          <entry key="py" value="84734" />
+          <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="14468" />
+          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="Python" value="85213" />
+          <entry key="SQL" value="46" />
         </counts>
       </usages-collector>
     </session>
@@ -197,12 +292,57 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cogs/events.py">
+        <entry file="file://$PROJECT_DIR$/start_bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="55" selection-start-line="55" selection-end-line="62" />
+            <state>
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1554813059783" expanded="true" signature="1498:1499" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cogs/administration.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="546" column="28" selection-start-line="546" selection-start-column="28" selection-end-line="546" selection-end-column="28" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
+                <marker date="1562223656328" expanded="true" signature="409:414" ph="..." />
+                <marker date="1562223656328" expanded="true" signature="23257:23546" ph="..." />
+                <marker date="1562223656328" expanded="true" signature="24263:24838" ph="..." />
+                <marker date="1562223656328" expanded="true" signature="26518:26523" ph="..." />
+                <marker date="1562223656328" expanded="true" signature="28609:29291" ph="..." />
+                <marker date="1562223656328" expanded="true" signature="37314:37318" ph="..." />
+                <marker date="1562223656328" expanded="true" signature="51335:51511" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cogs/global.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="135" column="52" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cogs/fun.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="78" column="70" lean-forward="true" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1563456408731" expanded="true" signature="2032:2154" ph="..." />
               </folding>
             </state>
           </provider>
@@ -211,132 +351,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+            <state relative-caret-position="918">
+              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
-                <marker date="1544699094613" expanded="true" signature="659:660" ph="..." />
-                <marker date="1544699094613" expanded="true" signature="686:1123" ph="..." />
-                <marker date="1544699094613" expanded="true" signature="1180:1262" ph="..." />
-                <marker date="1544699094613" expanded="true" signature="1284:1289" ph="..." />
-                <marker date="1544699094613" expanded="true" signature="1610:1615" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cogs/administration.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="37" column="56" lean-forward="true" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1544699625393" expanded="true" signature="307:312" ph="..." />
-                <marker date="1544699625393" expanded="true" signature="1640:1915" ph="..." />
+                <marker date="1552945571000" expanded="true" signature="1166:2026" ph="..." />
+                <marker date="1552945571000" expanded="true" signature="2047:2171" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cogs/poll.py">
+        <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1544699259847" expanded="true" signature="168:169" ph="..." />
-                <marker date="1544699259847" expanded="true" signature="3481:3486" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cogs/rolemenu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/rolemenu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1544556034097" expanded="true" signature="721:881" ph="..." />
-                <marker date="1544556034097" expanded="true" signature="1441:1863" ph="..." />
-                <marker date="1544556034097" expanded="true" signature="1689:1863" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start_bot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
-              <folding>
-                <marker date="1544553286552" expanded="true" signature="114:115" ph="..." />
-                <marker date="1544553286552" expanded="true" signature="114:119" ph="..." />
-                <marker date="1544553286552" expanded="true" signature="1355:1357" ph="..." />
-                <marker date="1544553286552" expanded="true" signature="1356:1357" ph="..." />
-                <marker date="1544553286552" expanded="true" signature="1389:1390" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cogs/configuration.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1544450519595" expanded="true" signature="106:111" ph="..." />
-                <marker date="1544450519595" expanded="true" signature="2852:2904" ph="..." />
-                <marker date="1544450519595" expanded="true" signature="3871:3876" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="45" column="64" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-              <folding>
-                <marker date="1544532173894" expanded="true" signature="28:29" ph="..." />
-                <marker date="1544532173894" expanded="true" signature="28:33" ph="..." />
-                <marker date="1544532173894" expanded="true" signature="974:979" ph="..." />
-                <marker date="1544532173894" expanded="true" signature="2731:2970" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1544532055878" expanded="true" signature="1209:1794" ph="..." />
-                <marker date="1544532055878" expanded="true" signature="1414:1794" ph="..." />
-                <marker date="1544532055878" expanded="true" signature="1618:1794" ph="..." />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -352,42 +382,54 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>overwrites</find>
-      <find>role</find>
-      <find>purge</find>
-      <find>&lt;</find>
-      <find>reind</find>
-      <find>get_user_info</find>
-      <find>server</find>
-      <find>generate</find>
-      <find>reindex</find>
-      <find>on_join</find>
-      <find>on_memb</find>
-      <find>Backup</find>
-      <find>restore</find>
+      <find>gen</find>
+      <find>self.bot.di</find>
+      <find>pdb</find>
+      <find>latency</find>
+      <find>Quote.g</find>
+      <find>quotes</find>
+      <find>self.bot.database</find>
+      <find>self.bot.database_connection()</find>
+      <find>get_role</find>
+      <find>setup</find>
+      <find>name='set</find>
+      <find>member_join</find>
       <find>roles</find>
-      <find>on_mem</find>
-      <find>cleanup</find>
-      <find>reinde</find>
+      <find>guild.on_join</find>
+      <find>on_member_</find>
+      <find>accept_invite</find>
+      <find>discordapp.com/register</find>
       <find>hackban</find>
-      <find>quote</find>
-      <find>promote</find>
-      <find>tos</find>
-      <find>config</find>
-      <find>warn</find>
-      <find>os.</find>
-      <find>create</find>
-      <find>delete</find>
-      <find>is_plugin_enabled(</find>
-      <find>broadcast</find>
-      <find>blacklist</find>
+      <find>botban</find>
+      <find>on_join</find>
       <find>fancy</find>
+      <find>botann</find>
+      <find>bot_ann</find>
+      <find>lookup</find>
+      <find>configure</find>
+      <find>dispatch</find>
+      <find>generate</find>
+      <find>hierarchy</find>
+      <find>ranks</find>
+      <find>cog_</find>
     </findStrings>
     <replaceStrings>
       <replace>send</replace>
       <replace>typing.Union[discord.Emoji, str]</replace>
       <replace>is_plugin_activated(guild.id,</replace>
+      <replace>=%s</replace>
+      <replace>%s</replace>
+      <replace>member_warned</replace>
+      <replace>@has_bot_role(administrator=True)</replace>
+      <replace>self.bot.database_connection()</replace>
+      <replace>DB()</replace>
+      <replace>cogs_</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Administrator\Desktop\TDR\the-dark-rewrite\cogs</dir>
+      <dir>C:\Users\Administrator\Desktop\TDR\the-dark-rewrite\models</dir>
+      <dir>C:\Users\Administrator\Desktop\TDR\the-dark-rewrite</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -395,57 +437,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/commands/moderation.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/models/DB.py" />
-        <option value="$PROJECT_DIR$/commands/plugin.py" />
-        <option value="$PROJECT_DIR$/commands/poll.py" />
-        <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/commands/__init__.py" />
-        <option value="$PROJECT_DIR$/commands/commands.py" />
-        <option value="$PROJECT_DIR$/commands/pokegym.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/formatter.py" />
-        <option value="$PROJECT_DIR$/BETA/checkds.py" />
-        <option value="$PROJECT_DIR$/commands/generate_tos.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/plugin.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/wrestling.py" />
-        <option value="$PROJECT_DIR$/commands/rolemenu.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/poll.py" />
-        <option value="$PROJECT_DIR$/commands/backup.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/pokegym.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/custom.py" />
-        <option value="$PROJECT_DIR$/models/never_have_i_ever_question.py" />
+        <option value="$PROJECT_DIR$/models/rpg/Building.py" />
+        <option value="$PROJECT_DIR$/models/rpg/BaseRace.py" />
+        <option value="$PROJECT_DIR$/models/rpg/races/God.py" />
+        <option value="$PROJECT_DIR$/models/rpg/Enemy.py" />
         <option value="$PROJECT_DIR$/models/neverhaveieverqueston.py" />
-        <option value="$PROJECT_DIR$/templates/cog.txt" />
-        <option value="$PROJECT_DIR$/templates/cog_command.txt" />
-        <option value="$PROJECT_DIR$/generate_cog.py" />
         <option value="$PROJECT_DIR$/models/Command.py" />
-        <option value="$PROJECT_DIR$/BETA/config.py" />
-        <option value="$PROJECT_DIR$/BETA/checks.py" />
         <option value="$PROJECT_DIR$/models/server_settings.py" />
-        <option value="$PROJECT_DIR$/models/User.py" />
-        <option value="$PROJECT_DIR$/BETA/start_bot.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/global.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/events.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/levels.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/administration.py" />
-        <option value="$PROJECT_DIR$/BETA/helpers.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/fun.py" />
-        <option value="$PROJECT_DIR$/BETA/cogs/configuration.py" />
-        <option value="$PROJECT_DIR$/models/rolemenu_emote.py" />
-        <option value="$PROJECT_DIR$/models/plugin.py" />
-        <option value="$PROJECT_DIR$/cogs/plugin.py" />
-        <option value="$PROJECT_DIR$/cogs/configuration.py" />
-        <option value="$PROJECT_DIR$/models/Server.py" />
-        <option value="$PROJECT_DIR$/start_api.py" />
-        <option value="$PROJECT_DIR$/start_bot.py" />
-        <option value="$PROJECT_DIR$/cogs/rolemenu.py" />
-        <option value="$PROJECT_DIR$/models/rolemenu.py" />
-        <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/cogs/events.py" />
+        <option value="$PROJECT_DIR$/models/World.py" />
         <option value="$PROJECT_DIR$/checks.py" />
+        <option value="$PROJECT_DIR$/models/Server.py" />
+        <option value="$PROJECT_DIR$/models/rpg/Item.py" />
+        <option value="$PROJECT_DIR$/models/rpg/Character.py" />
+        <option value="$PROJECT_DIR$/cogs/currency.py" />
+        <option value="$PROJECT_DIR$/cogs/custom.py" />
+        <option value="$PROJECT_DIR$/cogs/levels.py" />
+        <option value="$PROJECT_DIR$/models/rolemenu.py" />
+        <option value="$PROJECT_DIR$/models/rolemenu_emote.py" />
+        <option value="$PROJECT_DIR$/cogs/rolemenu.py" />
+        <option value="$PROJECT_DIR$/cogs/plugin.py" />
+        <option value="$PROJECT_DIR$/cogs/pokegym.py" />
+        <option value="$PROJECT_DIR$/cogs/marketplace.py" />
+        <option value="$PROJECT_DIR$/models/rpg/Enums.py" />
+        <option value="$PROJECT_DIR$/models/plugin.py" />
+        <option value="$PROJECT_DIR$/cogs/tests.py" />
+        <option value="$PROJECT_DIR$/models/base_model.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/models/User.py" />
+        <option value="$PROJECT_DIR$/models/quote.py" />
+        <option value="$PROJECT_DIR$/models/DB.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/models/DB.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/models/guild_edge.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/requirements.txt" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/models/partnership.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/run_api.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/run_bot.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/network analyze.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/config.py" />
+        <option value="$PROJECT_DIR$/spammer.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/create_avatar_data.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/spammer.py" />
+        <option value="$PROJECT_DIR$/../../discord_network_analysis/extend_avatar_data.py" />
+        <option value="$PROJECT_DIR$/start_bot.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/cogs/stream.py" />
+        <option value="$PROJECT_DIR$/cogs/events.py" />
+        <option value="$PROJECT_DIR$/cogs/configuration.py" />
         <option value="$PROJECT_DIR$/cogs/poll.py" />
+        <option value="$PROJECT_DIR$/cogs/logging.py" />
+        <option value="$PROJECT_DIR$/cogs/global.py" />
         <option value="$PROJECT_DIR$/cogs/administration.py" />
+        <option value="$PROJECT_DIR$/cogs/fun.py" />
       </list>
     </option>
   </component>
@@ -456,17 +498,19 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1280" />
-    <option name="height" value="754" />
+    <option name="x" value="167" />
+    <option name="width" value="1224" />
+    <option name="height" value="1019" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -482,18 +526,12 @@
             <path>
               <item name="the-dark-rewrite" type="b2602c69:ProjectViewProjectNode" />
               <item name="the-dark-rewrite" type="462c0819:PsiDirectoryNode" />
-              <item name="messages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="the-dark-rewrite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="the-dark-rewrite" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -502,15 +540,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\discord_network_analysis" />
+      <recent name="C:\Users\Administrator\Desktop\discord_network_analysis\models" />
       <recent name="C:\Users\Administrator\Desktop\TDR\lts\The-Dark-Bot-0.4.4" />
       <recent name="C:\Users\Administrator\Desktop\TDR\lts\The-Dark-Bot-0.4.4\BETA" />
       <recent name="C:\Users\Administrator\Desktop\TDR\TDR\models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\TDR\the-dark-rewrite\cogs" />
+      <recent name="C:\Users\Administrator\Desktop\discord_network_analysis" />
+      <recent name="C:\Users\Administrator\Desktop\TDR\the-dark-rewrite\models" />
       <recent name="C:\Users\Administrator\Desktop\TDR\lts\The-Dark-Bot-0.4.4\BETA\models" />
       <recent name="C:\Users\Administrator\Desktop\TDR\lts\The-Dark-Bot-0.4.4\BETA" />
     </key>
@@ -527,21 +570,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.plugin">
-    <configuration name="Server" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TDR" />
+  <component name="RunManager" selected="Python.start_bot (1)">
+    <configuration name="create_avatar_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="discord_network_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../discord_network_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/Server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../discord_network_analysis/create_avatar_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -550,20 +593,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plugin" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TDR" />
+    <configuration name="extend_avatar_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="discord_network_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../discord_network_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/plugin.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../discord_network_analysis/extend_avatar_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -572,20 +615,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="rolemenu_emote" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TDR" />
+    <configuration name="spammer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="discord_network_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../discord_network_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/rolemenu_emote.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../discord_network_analysis/spammer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -594,7 +637,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="start_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="spammer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TDR" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -607,7 +650,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/start_api.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Administrator\Desktop\discord_network_analysis\spammer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -640,18 +683,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.start_bot (1)" />
-      <item itemvalue="Python.rolemenu_emote" />
-      <item itemvalue="Python.Server" />
-      <item itemvalue="Python.start_api" />
-      <item itemvalue="Python.plugin" />
+      <item itemvalue="Python.spammer" />
+      <item itemvalue="Python.create_avatar_data" />
+      <item itemvalue="Python.spammer (1)" />
+      <item itemvalue="Python.extend_avatar_data" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.start_bot (1)" />
-        <item itemvalue="Python.start_api" />
-        <item itemvalue="Python.plugin" />
-        <item itemvalue="Python.Server" />
-        <item itemvalue="Python.rolemenu_emote" />
+        <item itemvalue="Python.extend_avatar_data" />
+        <item itemvalue="Python.spammer (1)" />
+        <item itemvalue="Python.create_avatar_data" />
+        <item itemvalue="Python.spammer" />
       </list>
     </recent_temporary>
   </component>
@@ -678,30 +721,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1416" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14232409" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.38669065" visible="true" weight="0.35029498" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.65665233" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31223175" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45594406" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.27937916" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.28531468" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32832617" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32725322" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.1606464" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3713969" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3269962" />
+      <window_info anchor="bottom" id="File Transfer" order="13" sideWeight="0.49946696" weight="0.32832617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Structure" order="5" sideWeight="0.6133093" side_tool="true" weight="0.179941" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
@@ -739,6 +783,37 @@
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../discord_network_analysis/spammer.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../discord_network_analysis/extend_avatar_data.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../discord_network_analysis/extend_avatar_data.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/administration.py</url>
+          <line>524</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="role.server" />
@@ -747,7 +822,34 @@
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>tmp = dict()
+tmp['something'] = dict()
+tmp['something'][logging_type] = 'yaay'
+tmp</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tmp = dict()
+tmp['something'] = dict()
+tmp['something'][logging_type] = 'yaay'</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>not member</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>guild.id == 523540647332806666</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>s1.id == 514806589174054923</expression-string>
         <language-id>Python</language-id>
@@ -784,480 +886,455 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
+    <expressions id="setValue">
+      <expression>
+        <expression-string>'😕'</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>dict(type=emotes[_].__class__.__name__, id=emotes[_].id)</expression-string>
+        <expression-string>self.bot.get_user(member_id)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>json.dumps(dict(type=emotes[_].__class__.__name__, id=emotes[_].id))</expression-string>
+        <expression-string>len(recaptcha_token.get_attribute('value'))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>emotes[_].__class__.__name__</expression-string>
+        <expression-string>recaptcha_token.get_attribute('value')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>str(type(emotes[_]))</expression-string>
+        <expression-string>urlparse.parse_qs(urlparse.urlsplit(src_string)[3])['k'][0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>type(emotes[_])</expression-string>
+        <expression-string>urlparse.parse_qs(urlparse.urlsplit(src_string)[3])['k']</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>type(emotes[_]</expression-string>
+        <expression-string>urlparse.parse_qs(urlparse.urlsplit(src_string)[3])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>dict(type=type(emotes[_]), id=emotes[_].id))</expression-string>
+        <expression-string>urlparse.parse_qs(urlparse.urlsplit(src_string)[4])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>json.dumps(dict(type=type(emotes[_]), id=emotes[_].id)), name=role.name)</expression-string>
+        <expression-string>urlparse.parse_qs(urlparse.urlsplit(src_string)['query'])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>response.decode('utf-8')</expression-string>
+        <expression-string>urlparse.urlsplit(src_string)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands/backup.py" />
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="542" column="8" selection-start-line="542" selection-start-column="8" selection-end-line="542" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backups/1538412098.1599877.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/channel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="147" column="23" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+    <entry file="file://$PROJECT_DIR$/cogs/currency.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/rolemenu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="50" column="18" lean-forward="true" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cogs/marketplace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="34" lean-forward="true" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/plugin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Program Files/Python37/Lib/asyncio/base_events.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="1757" selection-start-line="1757" selection-end-line="1757" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python37/Lib/json/encoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/guild.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="686" column="14" selection-start-line="686" selection-start-column="14" selection-end-line="686" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cogs/custom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cog_command.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_cog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/member.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python37/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="347" selection-start-line="347" selection-end-line="347" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/ext/commands/bot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="935" selection-start-line="935" selection-end-line="935" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="224" selection-start-line="224" selection-end-line="224" />
+        <state relative-caret-position="286">
+          <caret line="1743" selection-start-line="1743" selection-end-line="1743" />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Program Files/Python37/Lib/asyncio/events.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
+        <state relative-caret-position="378">
           <caret line="100" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Command.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="494">
+          <caret line="52" column="81" lean-forward="true" selection-start-line="52" selection-start-column="81" selection-end-line="52" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/base_model.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cogs/rolemenu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="106" column="34" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/mysql/connector/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="511" selection-start-line="511" selection-end-line="511" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cogs/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="83" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <marker date="1552945575000" expanded="true" signature="5402:5407" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helpers.py">
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/ext/commands/errors.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="252">
+          <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cogs/fun.py">
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/guild.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cogs/global.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="104" column="33" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+        <state relative-caret-position="186">
+          <caret line="763" column="14" selection-start-line="763" selection-start-column="14" selection-end-line="763" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/DB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/rolemenu_emote.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+        <state relative-caret-position="833">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
-            <marker date="1544273518833" expanded="true" signature="1079:1269" ph="..." />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python37/Lib/json/decoder.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="354" selection-start-line="354" selection-end-line="354" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/neverhaveieverqueston.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cogs/levels.py">
+    <entry file="file://$PROJECT_DIR$/models/quote.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1543847894241" expanded="true" signature="155:160" ph="..." />
-            <marker date="1543847894241" expanded="true" signature="460:624" ph="..." />
-            <marker date="1543847894241" expanded="true" signature="1664:1698" ph="..." />
-          </folding>
+        <state relative-caret-position="86">
+          <caret line="32" column="78" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/plugin.py">
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/models/DB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1544351100545" expanded="true" signature="56:104" ph="..." />
-          </folding>
+        <state relative-caret-position="222">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cogs/plugin.py">
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/server_settings.py">
+    <entry file="file://C:/discord_network_analysis/Lib/site-packages/discord/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-646">
+          <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/2018-12-11.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Server.py">
+    <entry file="file://C:/discord_network_analysis/Lib/site-packages/discord/ext/commands/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1544532055878" expanded="true" signature="1209:1794" ph="..." />
-            <marker date="1544532055878" expanded="true" signature="1414:1794" ph="..." />
-            <marker date="1544532055878" expanded="true" signature="1618:1794" ph="..." />
-          </folding>
+        <state relative-caret-position="132">
+          <caret line="899" column="30" selection-start-line="899" selection-start-column="30" selection-end-line="899" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/discord_network_analysis/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="340" selection-start-line="340" selection-end-line="340" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/run_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/start_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="45" column="64" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-          <folding>
-            <marker date="1544532173894" expanded="true" signature="28:29" ph="..." />
-            <marker date="1544532173894" expanded="true" signature="28:33" ph="..." />
-            <marker date="1544532173894" expanded="true" signature="974:979" ph="..." />
-            <marker date="1544532173894" expanded="true" signature="2731:2970" ph="..." />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/models/partnership.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/network analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="69" column="82" lean-forward="true" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/run_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/User.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        <state relative-caret-position="331">
+          <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/create_avatar_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="50" lean-forward="true" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/spammer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="63" column="12" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="63" selection-end-column="12" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/2018-12-11-h15.txt">
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/data/accounts.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        <state>
+          <caret column="663" lean-forward="true" selection-start-column="663" selection-end-column="663" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/2018-12-11-h14.txt">
+    <entry file="file://$PROJECT_DIR$/../../discord_network_analysis/extend_avatar_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-717" />
+        <state relative-caret-position="76">
+          <caret line="74" column="88" selection-start-line="74" selection-start-column="88" selection-end-line="74" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <marker date="1554560897484" expanded="true" signature="116284:118725" ph="..." />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages/2018-12-11-h16.txt">
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2179" />
+        <state relative-caret-position="17">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cogs/configuration.py">
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/ext/commands/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        <state relative-caret-position="15062">
+          <caret line="902" column="6" selection-start-line="902" selection-start-column="6" selection-end-line="902" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/shard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cog_command.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cogs/stream.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cogs/logging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cogs/events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="264" column="45" selection-start-line="264" selection-start-column="37" selection-end-line="264" selection-end-column="45" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1544450519595" expanded="true" signature="106:111" ph="..." />
-            <marker date="1544450519595" expanded="true" signature="2852:2904" ph="..." />
-            <marker date="1544450519595" expanded="true" signature="3871:3876" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1003">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/ext/commands/converter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="492" column="8" selection-start-line="492" selection-start-column="8" selection-end-line="492" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python37/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="400" selection-start-line="400" selection-end-line="400" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start_bot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
-          <folding>
-            <marker date="1544553286552" expanded="true" signature="114:115" ph="..." />
-            <marker date="1544553286552" expanded="true" signature="114:119" ph="..." />
-            <marker date="1544553286552" expanded="true" signature="1355:1357" ph="..." />
-            <marker date="1544553286552" expanded="true" signature="1356:1357" ph="..." />
-            <marker date="1544553286552" expanded="true" signature="1389:1390" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/ext/commands/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/rolemenu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1544556034097" expanded="true" signature="721:881" ph="..." />
-            <marker date="1544556034097" expanded="true" signature="1441:1863" ph="..." />
-            <marker date="1544556034097" expanded="true" signature="1689:1863" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cogs/rolemenu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1560878814423" expanded="true" signature="1261:1266" ph="..." />
+            <marker date="1560878814423" expanded="true" signature="4695:5905" ph="..." />
+            <marker date="1560878814423" expanded="true" signature="6042:6185" ph="..." />
+            <marker date="1560878814423" expanded="true" signature="23900:23912" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="425">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cogs/events.py">
+    <entry file="file://$PROJECT_DIR$/cogs/configuration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="55" selection-start-line="55" selection-end-line="62" />
+        <state relative-caret-position="1581">
+          <caret line="93" column="26" lean-forward="true" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <marker date="1560878914813" expanded="true" signature="7943:9839" ph="..." />
+            <marker date="1560878914813" expanded="true" signature="9839:9844" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="918">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1544699094613" expanded="true" signature="659:660" ph="..." />
-            <marker date="1544699094613" expanded="true" signature="686:1123" ph="..." />
-            <marker date="1544699094613" expanded="true" signature="1180:1262" ph="..." />
-            <marker date="1544699094613" expanded="true" signature="1284:1289" ph="..." />
-            <marker date="1544699094613" expanded="true" signature="1610:1615" ph="..." />
+            <marker date="1552945571000" expanded="true" signature="1166:2026" ph="..." />
+            <marker date="1552945571000" expanded="true" signature="2047:2171" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cogs/poll.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/global_python37_venv/Lib/site-packages/discord/ext/commands/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1554813059783" expanded="true" signature="1498:1499" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cogs/global.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="135" column="52" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="52" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1544699259847" expanded="true" signature="168:169" ph="..." />
-            <marker date="1544699259847" expanded="true" signature="3481:3486" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cogs/administration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="37" column="56" lean-forward="true" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+        <state relative-caret-position="269">
+          <caret line="546" column="28" selection-start-line="546" selection-start-column="28" selection-end-line="546" selection-end-column="28" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1544699625393" expanded="true" signature="307:312" ph="..." />
-            <marker date="1544699625393" expanded="true" signature="1640:1915" ph="..." />
+            <marker date="1562223656328" expanded="true" signature="409:414" ph="..." />
+            <marker date="1562223656328" expanded="true" signature="23257:23546" ph="..." />
+            <marker date="1562223656328" expanded="true" signature="24263:24838" ph="..." />
+            <marker date="1562223656328" expanded="true" signature="26518:26523" ph="..." />
+            <marker date="1562223656328" expanded="true" signature="28609:29291" ph="..." />
+            <marker date="1562223656328" expanded="true" signature="37314:37318" ph="..." />
+            <marker date="1562223656328" expanded="true" signature="51335:51511" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cogs/fun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="78" column="70" lean-forward="true" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1563456408731" expanded="true" signature="2032:2154" ph="..." />
           </folding>
         </state>
       </provider>

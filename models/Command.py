@@ -28,7 +28,7 @@ class Command(object):
         return (self.author.guild_permissions.administrator and self.command['type'] > 1) or self.command['type'] == 1
 
     async def is_plugin_enabled(self):
-        guild = DB().fetch_one('SELECT id, plugins FROM servers WHERE id=?', (self.message.guild.id,))
+        guild = DB().fetch_one('SELECT id, plugins FROM servers WHERE id=%s', (self.message.guild.id,))
         if not guild and self.command['command'] == 'tdb!reindex':
             return dict(status=200)
         elif not guild:
@@ -37,7 +37,7 @@ class Command(object):
         g_id, g_plugins = guild
         self.guild_plugins = plugins = json.loads(g_plugins)
         if self.command['name'] in plugins:
-            d_plugin = DB().fetch_one("SELECT * FROM plugins WHERE name=? OR aliases LIKE '%?%'", (self.command['name'],))
+            d_plugin = DB().fetch_one("SELECT * FROM plugins WHERE name=? OR aliases LIKE '%%s%'", (self.command['name'],))
             d_id, d_name, d_information, d_command, d_usage, d_required_plugins, d_type, d_aliases = d_plugin
             if d_required_plugins:
                 for p in json.loads(d_required_plugins):

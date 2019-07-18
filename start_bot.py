@@ -2,6 +2,7 @@ import config as config
 import discord
 import sys
 from discord.ext import commands
+from models.DB import DB
 
 
 def get_prefix(bot, message):
@@ -11,6 +12,7 @@ def get_prefix(bot, message):
 
 
 initial_extensions = [
+    'cogs.logging',
     'cogs.events',
     'cogs.global',
     'cogs.custom',
@@ -20,12 +22,15 @@ initial_extensions = [
     'cogs.poll',
     'cogs.fun',
     'cogs.levels',
+    'cogs.currency',
     'cogs.rolemenu',
-    'cogs.pokegym',
+    'cogs.tests'
+    # 'cogs.marketplace'
+    # 'cogs.pokegym',
 ]
 
 
-bot = commands.Bot(command_prefix=get_prefix, description='The Dark Bot Reloaded', case_insensitive=True, owner_id=256070670029553666)
+bot = commands.AutoShardedBot(command_prefix=get_prefix, description='The Dark Bot Reloaded', case_insensitive=True, owner_id=197106036899971072, max_message=9000000)
 
 
 if __name__ == '__main__':

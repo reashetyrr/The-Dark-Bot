@@ -2,10 +2,11 @@ import discord
 from discord.ext import commands
 from discord.ext.commands.cooldowns import BucketType
 from checks import is_plugin_enabled
+from emoji import UNICODE_EMOJI
 import shlex
 
 
-class PollCog:
+class PollCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -13,7 +14,7 @@ class PollCog:
     @commands.cooldown(5, 60, BucketType.channel)
     @commands.guild_only()
     @is_plugin_enabled(plugin_name='poll')
-    async def cog_quote(self, ctx, message_id: int, *, reply: str = None):
+    async def cogs_quote(self, ctx, message_id: int, *, reply: str = None):
         """Quote a message by adding an message id"""
         if not message_id:
             return await ctx.send('Missing message id')
@@ -31,9 +32,18 @@ class PollCog:
     @commands.has_permissions(administrator=True)
     @commands.guild_only()
     @is_plugin_enabled(plugin_name='poll')
-    async def cog_poll(self, ctx, poll_name, poll_question, *, options: str):
+    async def cogs_poll(self, ctx, poll_name, poll_question, *, options: str):
         """Create a poll using a name, question and options"""
         options = shlex.split(options)
+        emotes = []
+        tmp_options = []
+        for option in options:
+            if (option.startswith('<:') and option.endswith('>')) or (option.startswith('<a') and option.endswith('>')) or option in UNICODE_EMOJI:
+                emotes.append(option)
+            else:
+                tmp_options.append(option)
+        options = tmp_options.copy()
+
         if len(options) > 10:
             return await ctx.send('Please limit the options to 10 max')
         choices = [
@@ -82,6 +92,9 @@ class PollCog:
         for index, option in enumerate(options):
             choices[index]['choice'] = option
 
+        for index, emote in enumerate(emotes):
+            choices[index]['emote'] = emote
+
         tmp_choices = choices.copy()
 
         choices = []
@@ -96,7 +109,7 @@ class PollCog:
         poll = await ctx.send(embed=emb)
 
         for option in choices:
-            await poll.add_reaction(option['emote'])
+            await poll.add_reaction(option['emote'] if option['emote'] in UNICODE_EMOJI else option['emote'][2:-1])
 
 
 def setup(bot):
